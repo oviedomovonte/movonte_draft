@@ -185,3 +185,10 @@ footer {
   text-align: center;
   padding: 10px 20px;
 }
+
+}
+.contact a:nth-of-type(1) img {
+  width: 20px;  /* Ajusta el tamaño del ícono de LinkedIn */
+  height: 20px; /* Especifica la altura también */
+  margin-top: -2px; /* Mueve solo el ícono de LinkedIn hacia arriba */
+}
