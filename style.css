@@ -151,10 +151,6 @@ body {
   display: inline-block; /* Para que los logos no se rompan en varias líneas */
 }
 
-.contact a:first-child img {
-  width: 17px;  /* Ajusta el tamaño del ícono de LinkedIn */
-  height: 17px; /* Especifica la altura también */
-}
 
 .contact a:hover {
   transform: scale(1.1);
@@ -186,9 +182,21 @@ footer {
   padding: 10px 20px;
 }
 
-}
 .contact a:nth-of-type(1) img {
-  width: 20px;  /* Ajusta el tamaño del ícono de LinkedIn */
-  height: 20px; /* Especifica la altura también */
-  margin-top: -2px; /* Mueve solo el ícono de LinkedIn hacia arriba */
+  width: 25px;  /* Ajusta el tamaño del ícono de LinkedIn */
+  height: 25px; /* Especifica la altura también */
+  margin-top: -8px; /* Mueve solo el ícono de LinkedIn hacia arriba */
+}
+
+.contact a img {
+  width: 30px;  /* Ajusta el tamaño de los íconos */
+  height: 30px; /* Especifica la altura también */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Añade transición para el hover */
+  vertical-align: middle;  /* Alinea los íconos verticalmente */
+}
+
+.contact a:nth-of-type(1) img {
+  width: 25px;  /* Ajusta el tamaño del ícono de LinkedIn */
+  height: 25px; /* Especifica la altura también */
+  margin-top: -2px; /* Mueve el ícono de LinkedIn hacia arriba */
 }
