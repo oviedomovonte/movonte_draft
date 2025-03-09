@@ -1,19 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.getElementById('hamburger');
     const menuItems = document.getElementById('menu-items');
-    const languageEn = document.getElementById('language-en');
-    const languageEs = document.getElementById('language-es');
+    const languageSelect = document.getElementById('language-select');
 
     hamburger.addEventListener('click', function () {
         menuItems.classList.toggle('active');
     });
 
-    languageEn.addEventListener('click', function () {
-        loadTranslations('en');
-    });
-
-    languageEs.addEventListener('click', function () {
-        loadTranslations('es');
+    languageSelect.addEventListener('change', function () {
+        const selectedLanguage = languageSelect.value;
+        loadTranslations(selectedLanguage);
     });
 
     function loadTranslations(language) {
@@ -40,8 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Detect language preference and load translations
     const userLanguage = navigator.language.slice(0, 2); // Get the first two letters of the browser language
     if (userLanguage === 'es') {
+        languageSelect.value = 'es';
         loadTranslations('es');
     } else {
+        languageSelect.value = 'en';
         loadTranslations('en');
     }
 });

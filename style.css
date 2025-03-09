@@ -22,11 +22,19 @@ body {
   gap: 10px;
 }
 
-.language-button {
-  background: none;
-  border: none;
-  font-size: 1.5em;
+.language-select {
+  background-color: #000;
+  color: #69aaff; /* Azul corporativo */
+  border: 1px solid #69aaff;
+  padding: 3.75px; /* Reducido en un 25% */
+  font-size: 0.75em; /* Reducido en un 25% */
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.language-select option {
+  background-color: #000;
+  color: #69aaff; /* Azul corporativo */
 }
 
 .menu {
@@ -276,5 +284,9 @@ footer {
 
     .content p {
         margin-top: 30px; /* Añade un margen superior al primer párrafo */
+    }
+
+    #intro-paragraph {
+        margin-top: 60px; /* Añade un margen superior al párrafo en móvil */
     }
 }
