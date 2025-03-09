@@ -17,18 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(translations => {
                 document.getElementById('cintilla-text').textContent = translations.cintilla;
-                document.getElementById('about-us').textContent = translations.about_us;
+                document.getElementById('about_us').textContent = translations.about_us;
                 document.getElementById('services').textContent = translations.services;
-                document.getElementById('movonte-way').textContent = translations.movonte_way;
-                document.getElementById('schedule-consultation').textContent = translations.schedule_consultation;
-                document.getElementById('start-now').textContent = translations.start_now;
-                document.getElementById('intro-paragraph').textContent = translations.intro_paragraph;
-                document.getElementById('core-mission').textContent = translations.core_mission;
-                document.getElementById('contact-us').textContent = translations.contact_us;
-                document.getElementById('lets-work-together').textContent = translations.lets_work_together;
+                document.getElementById('movonte_way').textContent = translations.movonte_way;
+                document.getElementById('schedule_consultation').textContent = translations.schedule_consultation;
+                document.getElementById('start_now').textContent = translations.start_now;
+                document.getElementById('intro_paragraph').textContent = translations.intro_paragraph;
+                document.getElementById('core_mission').textContent = translations.core_mission;
+                document.getElementById('contact_us').textContent = translations.contact_us;
+                document.getElementById('lets_work_together').textContent = translations.lets_work_together;
                 document.getElementById('footer').textContent = translations.footer;
-                document.getElementById('simplify-innovation').innerHTML = translations.simplify_innovation + '<br>' + translations.driving_results;
-                document.getElementById('streamline-operations').innerHTML = translations.streamline_operations;
+                document.getElementById('simplify_innovation').innerHTML = translations.simplify_innovation + '<br>' + translations.driving_results;
+                document.getElementById('streamline_operations').innerHTML = translations.streamline_operations;
             })
             .catch(error => console.error('Error loading translations:', error));
     }

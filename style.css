@@ -303,3 +303,24 @@ footer {
         margin-top: 60px; /* Añade un margen superior al párrafo en móvil */
     }
 }
+
+.streamline-operations {
+    white-space: nowrap; /* No se partirá en móviles */
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 768px) {
+    .streamline-operations {
+        white-space: normal; /* Permite el salto de línea */
+    }
+}
+.streamline-operations {
+    white-space: nowrap; /* No se partirá en móviles */
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 768px) {
+    .streamline-operations {
+        white-space: normal; /* Permite el salto de línea */
+    }
+}
