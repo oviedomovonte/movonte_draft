@@ -1,65 +1,55 @@
-/* Estilos Generales */
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Darker Grotesque', sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Darker Grotesque', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Cintilla Superior */
-.top-bar {
+.cintilla {
     background-color: #0474ef;
-    text-align: left;
+    color: #fff;
+    text-align: right;
     padding: 10px 20px;
-    font-size: 14px;
-}
-
-/* Barra de Navegación */
-header {
-    background-color: #000;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    height: 50px;
 }
 
 .menu {
-    list-style: none;
+    background-color: #000;
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu .logo {
+    /* Aquí puedes agregar el logo de MOVONTE */
+}
+
+.menu .menu-items {
+    display: flex;
     align-items: center;
 }
 
-.menu li a {
-    color: white;
+.menu .menu-items a {
+    color: #fff;
+    margin-right: 20px;
     text-decoration: none;
-    font-size: 18px;
 }
 
-.btn-schedule {
+.menu .menu-items .button {
     background-color: #69AAF;
-    padding: 12px 20px;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: inline-block;
+    cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
 }
 
-.btn-schedule:hover {
-    background-color: #FC5e51;
+.menu .menu-items .button:hover {
     transform: scale(1.1);
+    background-color: #FC5e51;
 }
 
-/* Portada */
 .portada {
     position: relative;
     text-align: left;
@@ -74,100 +64,67 @@ header {
 .contenido-portada {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 20%;
     transform: translateY(-50%);
-    text-align: left;
 }
 
-.titulo-portada {
-    font-size: 3.5rem;
-    font-weight: 800;
+.contenido-portada h1 {
+    font-size: 3em;
 }
 
-.subtitulo-portada {
-    font-size: 1.8rem;
-    font-weight: 400;
-    max-width: 600px;
+.contenido-portada p {
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
-.cta-boton {
+.contenido-portada .button {
     background-color: #fc5e51;
-    padding: 14px 24px;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: inline-block;
+    cursor: pointer;
     transition: transform 0.3s;
-    margin-top: 10px;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
-.cta-boton:hover {
+.contenido-portada .button:hover {
     transform: scale(1.1);
 }
 
-/* Sección de Presentación */
-.presentation {
-    text-align: justify;
-    padding: 50px 20px;
-    font-size: 1.4rem;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.8;
-}
-
-/* Espacio para Imagen */
-.image-placeholder {
+.content {
     text-align: center;
-    margin: 30px 0;
-    height: 300px;
-    background-color: #444;
+    padding: 50px 20px;
 }
 
-/* Contacto */
+.content p {
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
 .contact {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 0;
 }
 
-.social-icons a {
-    margin: 0 15px;
+.contact a {
+    margin: 0 10px;
     color: #69AAff;
     transition: transform 0.3s, color 0.3s;
-    font-size: 1.8rem;
 }
 
-.social-icons a:hover {
-    color: #fc5e51;
+.contact a:hover {
     transform: scale(1.1);
+    color: #fc5e51;
 }
 
-/* Cintilla Inferior */
-.bottom-bar {
+.cintilla-footer {
+    background-color: #0474ef;
     text-align: center;
-    background-color: #222;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
-/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #111;
-}
-
-/* Menú Hamburguesa */
-.hamburguer-menu {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-    .hamburguer-menu {
-        display: block;
-    }
+    padding: 10px 20px;
 }
