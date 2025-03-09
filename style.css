@@ -323,4 +323,41 @@ footer {
     .streamline-operations {
         white-space: normal; /* Permite el salto de línea */
     }
+}.streamline-operations {
+    white-space: nowrap; /* No se partirá en móviles */
+    word-wrap: break-word; /* Permite el ajuste de palabras largas */
+    overflow-wrap: break-word; /* Permite el ajuste de palabras largas */
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 768px) {
+    .streamline-operations {
+        white-space: normal; /* Permite el salto de línea */
+    }
+}
+.streamline-operations {
+    white-space: normal; /* Permite el salto de línea */
+    word-wrap: break-word; /* Permite el ajuste de palabras largas */
+    overflow-wrap: break-word; /* Permite el ajuste de palabras largas */
+    text-align: center; /* Centra el texto */
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 768px) {
+    .streamline-operations {
+        white-space: pre-line; /* Permite el salto de línea */
+    }
+}
+.streamline-operations {
+    white-space: normal; /* Permite el salto de línea */
+    word-wrap: break-word; /* Permite el ajuste de palabras largas */
+    overflow-wrap: break-word; /* Permite el ajuste de palabras largas */
+    text-align: left; /* Justifica el texto a la izquierda */
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 768px) {
+    .streamline-operations {
+        white-space: pre-line; /* Permite el salto de línea */
+    }
 }
