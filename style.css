@@ -131,6 +131,19 @@ body {
   margin-top: 20px;
   text-decoration: none;
   display: inline-block; /* Para que el botón no ocupe todo el ancho */
+  font-weight: 700;
+  
+  /* Estilo por defecto */
+.streamline-operations {
+  white-space: nowrap;
+}
+
+/* Para pantallas grandes */
+@media (min-width: 768px) {
+  .streamline-operations {
+    white-space: normal; /* Permite el salto de línea */
+  }
+}
 }
 
 .contenido-portada .button:hover {
