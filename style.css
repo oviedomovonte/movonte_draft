@@ -4,9 +4,7 @@ body {
   font-family: "Darker Grotesque", Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-body {
-    font-size: 19px; /* Ajusta según lo necesites: 18px, 19px o 20px */
+  font-size: 19px; /* Ajusta el tamaño base del texto */
 }
 
 .cintilla {
@@ -25,7 +23,7 @@ body {
 }
 
 .menu .logo {
-  width: 150px; /* Ajusta según el tamaño de tu logo */
+  width: 150px;
   height: auto;
 }
 
@@ -77,18 +75,24 @@ body {
 
 .contenido-portada {
   position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translateY(-50%);
+  top: 40%;  /* Baja aún más este valor para mover el contenido más arriba */
+  left: 10%;
+  transform: translateY(-50%);  /* Ajusta el valor de -50% a algo como -60% para subir más */
+  text-align: left;  /* Asegura que el texto esté alineado a la izquierda */
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* Alinea todos los elementos a la izquierda */
 }
 
 .contenido-portada h1 {
   font-size: 3em;
+  margin-bottom: 5px; /* Espacio debajo del título */
 }
 
 .contenido-portada p {
   font-size: 1.5em;
-  margin-top: 20px;
+  margin-top: 5px; /* Espacio arriba del subtítulo */
 }
 
 .contenido-portada .button {
@@ -134,7 +138,8 @@ body {
 }
 
 .contact p {
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Espacio entre el texto y los iconos */
+  text-align: center !important; /* Sobrescribe cualquier justificación previa */
 }
 
 .contact a {
@@ -150,8 +155,13 @@ body {
 }
 
 .contact img {
-  width: 30px; /* Ajusta el tamaño de los logos */
-  height: auto;
+  width: 30px;  /* Ajusta el tamaño del SVG */
+  height: 30px; /* Especifica la altura también */
+  transition: transform 0.3s ease;  /* Transición suave al hacer hover */
+}
+
+.contact a:hover img {
+  transform: scale(1.1);  /* Aumenta el tamaño del ícono al hacer hover */
 }
 
 .cintilla-footer {
@@ -165,52 +175,29 @@ footer {
   padding: 10px 20px;
 }
 .contact {
-    text-align: center; /* Centra todo el contenido dentro del div */
+    text-align: center;
+    padding: 20px 0;
 }
 
 .contact p {
-    margin-bottom: 10px; /* Espacio entre el texto y los iconos */
-}
-.contact p {
-    text-align: center !important; /* Sobrescribe cualquier justificación previa */
-    margin-bottom: 10px; /* Espacio entre el texto y los iconos */
+    margin-bottom: 10px;
 }
 
-.contenido-portada {
-    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Asegura que todo el contenido dentro esté alineado a la izquierda */
-}
-.contenido-portada {
-    max-width: 600px; /* Ajusta el ancho máximo del texto */
+.contact a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
-.contenido-portada {
-    position: absolute;
-    top: 50%;
-    left: 10%; /* Ajusta este valor para mover más a la izquierda */
-    transform: translateY(-50%);
-    text-align: left;
+.contact img {
+    width: 30px;
+    height: 30px;
+    fill: #fff; /* Cambia el color si es necesario */
+    transition: transform 0.3s ease;
 }
 
-.contenido-portada {
-    position: absolute;
-    top: 40%;  /* Baja aún más este valor para mover el contenido más arriba */
-    left: 10%;
-    transform: translateY(-50%);  /* Ajusta el valor de -50% a algo como -60% para subir más */
-    text-align: left;
-    max-width: 90%;
-}
-
-.contenido-portada h1 {
-    margin-bottom: 5px; /* Espacio debajo del título */
-}
-
-.contenido-portada p {
-    margin-top: 5px; /* Espacio arriba del subtítulo */
+.contact a:hover img {
+    transform: scale(1.1);
 }
 .contact img {
-    width: 30px;  /* Ajusta el tamaño según lo necesites */
-    height: auto;
+    fill: #fff; /* Cambia el color según sea necesario */
 }
