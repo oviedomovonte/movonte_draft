@@ -1,0 +1,137 @@
+/* Estilos Generales */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Darker Grotesque', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cintilla Superior */
+.top-bar {
+    background-color: #0474ef;
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Barra de Navegación */
+header {
+    background-color: #000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-schedule {
+    background-color: #69AAF;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-schedule:hover {
+    background-color: #FC5e51;
+    transform: scale(1.1);
+}
+
+/* Portada */
+.portada {
+    position: relative;
+    text-align: center;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenido-portada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cta-boton {
+    background-color: #fc5e51;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.cta-boton:hover {
+    transform: scale(1.1);
+}
+
+/* Sección de Presentación */
+.presentation {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Contacto */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #69AAff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fc5e51;
+    transform: scale(1.1);
+}
+
+/* Cintilla Inferior */
+.bottom-bar {
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+}
+
+/* Menú Hamburguesa */
+.hamburguer-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .hamburguer-menu {
+        display: block;
+    }
+}
