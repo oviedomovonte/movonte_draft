@@ -1,184 +1,163 @@
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Darker Grotesque', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: "Darker Grotesque", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .cintilla {
-    background-color: #0474ef;
-    color: #fff;
-    text-align: left;
-    padding: 10px 20px;
+  background-color: #0474ef;
+  color: #fff;
+  text-align: left;
+  padding: 10px 20px;
 }
 
 .menu {
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .menu .logo {
-    width: 150px; /* Ajusta según el tamaño de tu logo */
-    height: auto;
+  width: 150px; /* Ajusta según el tamaño de tu logo */
+  height: auto;
 }
 
 .menu .logo img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .menu .menu-items {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .menu .menu-items a {
-    color: #fff;
-    margin-right: 20px;
-    text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
 }
 
 /* Estilos para el botón "Schedule a Consultation" */
 .menu .menu-items .button {
-    background-color: #69AAF; /* Color inicial */
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 25px; /* Bordes redondeados */
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
-    text-decoration: none; /* Elimina el subrayado si es un enlace */
-    display: inline-block; /* Para que no ocupe todo el ancho */
-    font-family: 'Darker Grotesque', Arial, sans-serif; /* Asegura que use la misma fuente */
-    font-weight: 700; /* Texto en negrita */
-    border: none; /* Elimina el borde si lo tiene */
+  background-color: #69aaff; /* Color inicial */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
+  text-decoration: none; /* Elimina el subrayado */
+  display: inline-block; /* Para que no ocupe todo el ancho */
+  font-family: "Darker Grotesque", Arial, sans-serif; /* Asegura que use la misma fuente */
+  font-weight: 700; /* Texto en negrita */
 }
 
 .menu .menu-items .button:hover {
-    transform: scale(1.1); /* Crece ligeramente */
-    background-color: #FC5e51; /* Cambia de color al pasar el cursor */
+  transform: scale(1.1); /* Crece ligeramente */
+  background-color: #fc5e51; /* Cambia de color al pasar el cursor */
 }
 
 .portada {
-    position: relative;
-    text-align: left;
+  position: relative;
+  text-align: left;
 }
 
 .portada img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .contenido-portada {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
 }
 
 .contenido-portada h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .contenido-portada p {
-    font-size: 1.5em;
-    margin-top: 20px;
+  font-size: 1.5em;
+  margin-top: 20px;
 }
 
 .contenido-portada .button {
-    background-color: #fc5e51;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    margin-top: 20px;
-    text-decoration: none;
-    display: inline-block; /* Para que el botón no ocupe todo el ancho */
+  background-color: #fc5e51;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block; /* Para que el botón no ocupe todo el ancho */
 }
 
 .contenido-portada .button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .content {
-    text-align: center;
-    padding: 50px 20px;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 .content p {
-    text-align: justify;
-    margin: 0 auto 50px auto;
-    max-width: 800px; /* Ajusta según el ancho deseado */
+  text-align: justify;
+  margin: 0 auto 50px auto;
+  max-width: 800px; /* Ajusta según el ancho deseado */
 }
 
 .imagen-espacio {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .imagen-espacio img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .contact {
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .contact p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact a {
-    margin: 0 10px;
-    color: #69AAff;
-    transition: transform 0.3s, color 0.3s;
-    display: inline-block; /* Para que los logos no se rompan en varias líneas */
+  margin: 0 10px;
+  color: #69aaff;
+  transition: transform 0.3s, color 0.3s;
+  display: inline-block; /* Para que los logos no se rompan en varias líneas */
 }
 
 .contact a:hover {
-    transform: scale(1.1);
-    color: #fc5e51;
+  transform: scale(1.1);
+  color: #fc5e51;
 }
 
 .contact img {
-    width: 30px; /* Ajusta el tamaño de los logos */
-    height: auto;
+  width: 30px; /* Ajusta el tamaño de los logos */
+  height: auto;
 }
 
 .cintilla-footer {
-    background-color: #0474ef;
-    text-align: center;
-    padding: 10px 20px;
+  background-color: #0474ef;
+  text-align: center;
+  padding: 10px 20px;
 }
 
 footer {
-    text-align: center;
-    padding: 10px 20px;
-}
-
-/* Estilos para el botón "Schedule a Consultation" */
-.menu .menu-items .button {
-    background-color: #69AAF; /* Color inicial */
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 25px; /* Bordes redondeados */
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
-    text-decoration: none; /* Elimina el subrayado */
-    display: inline-block; /* Para que no ocupe todo el ancho */
-    font-family: 'Darker Grotesque', Arial, sans-serif; /* Asegura que use la misma fuente */
-    font-weight: 700; /* Texto en negrita */
-    border: none; /* Elimina el borde si lo tiene */
-}
-
-.menu .menu-items .button:hover {
-    transform: scale(1.1); /* Crece ligeramente */
-    background-color: #FC5e51; /* Cambia de color al pasar el cursor */
+  text-align: center;
+  padding: 10px 20px;
 }
