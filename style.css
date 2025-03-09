@@ -22,7 +22,13 @@ body {
 }
 
 .menu .logo {
-    /* Aquí puedes agregar el logo de MOVONTE */
+    width: 150px; /* Ajusta según el tamaño de tu logo */
+    height: auto;
+}
+
+.menu .logo img {
+    width: 100%;
+    height: auto;
 }
 
 .menu .menu-items {
@@ -86,6 +92,7 @@ body {
     transition: transform 0.3s;
     margin-top: 20px;
     text-decoration: none;
+    display: inline-block; /* Para que el botón no ocupe todo el ancho */
 }
 
 .contenido-portada .button:hover {
@@ -99,7 +106,8 @@ body {
 
 .content p {
     text-align: justify;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
+    max-width: 800px; /* Ajusta según el ancho deseado */
 }
 
 .imagen-espacio {
@@ -107,20 +115,35 @@ body {
     margin: 20px 0;
 }
 
+.imagen-espacio img {
+    max-width: 100%;
+    height: auto;
+}
+
 .contact {
     text-align: center;
     padding: 20px 0;
+}
+
+.contact p {
+    margin-bottom: 20px;
 }
 
 .contact a {
     margin: 0 10px;
     color: #69AAff;
     transition: transform 0.3s, color 0.3s;
+    display: inline-block; /* Para que los logos no se rompan en varias líneas */
 }
 
 .contact a:hover {
     transform: scale(1.1);
     color: #fc5e51;
+}
+
+.contact img {
+    width: 30px; /* Ajusta el tamaño de los logos */
+    height: auto;
 }
 
 .cintilla-footer {
@@ -132,4 +155,26 @@ body {
 footer {
     text-align: center;
     padding: 10px 20px;
+}
+.menu .menu-items .button {
+    background-color: #69AAF; /* Color inicial */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
+    text-decoration: none; /* Elimina el subrayado si es un enlace */
+    display: inline-block; /* Para que no ocupe todo el ancho */
+    font-family: 'Darker Grotesque', Arial, sans-serif; /* Asegura que use la misma fuente */
+    font-weight: 700; /* Texto en negrita */
+    border: none; /* Elimina el borde si lo tiene */
+}
+
+.menu .menu-items .button:hover {
+    transform: scale(1.1); /* Crece ligeramente */
+    background-color: #FC5e51; /* Cambia de color al pasar el cursor */
+}
+.menu .menu-items {
+    display: flex;
+    align-items: center;
 }
