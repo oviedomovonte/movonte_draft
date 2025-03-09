@@ -193,3 +193,24 @@ footer {
     transform: translateY(-50%);
     text-align: left;
 }
+
+.contenido-portada {
+    position: absolute;
+    top: 40%;  /* Baja aún más este valor para mover el contenido más arriba */
+    left: 10%;
+    transform: translateY(-50%);  /* Ajusta el valor de -50% a algo como -60% para subir más */
+    text-align: left;
+    max-width: 90%;
+}
+
+.contenido-portada h1 {
+    margin-bottom: 5px; /* Espacio debajo del título */
+}
+
+.contenido-portada p {
+    margin-top: 5px; /* Espacio arriba del subtítulo */
+}
+.contact img {
+    width: 30px;  /* Ajusta el tamaño según lo necesites */
+    height: auto;
+}
