@@ -12,6 +12,21 @@ body {
   color: #fff;
   text-align: left;
   padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.language-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
 .menu {

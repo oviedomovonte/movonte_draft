@@ -1,31 +1,38 @@
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.getElementById('hamburger');
     const menuItems = document.getElementById('menu-items');
-    const languageSelect = document.getElementById('language-select');
+    const languageEn = document.getElementById('language-en');
+    const languageEs = document.getElementById('language-es');
 
     hamburger.addEventListener('click', function () {
         menuItems.classList.toggle('active');
     });
 
-    languageSelect.addEventListener('change', function () {
-        const selectedLanguage = languageSelect.value;
-        loadTranslations(selectedLanguage);
+    languageEn.addEventListener('click', function () {
+        loadTranslations('en');
+    });
+
+    languageEs.addEventListener('click', function () {
+        loadTranslations('es');
     });
 
     function loadTranslations(language) {
         fetch(`${language}.json`)
             .then(response => response.json())
             .then(translations => {
-                document.getElementById('cintilla').textContent = translations.cintilla;
+                document.getElementById('cintilla-text').textContent = translations.cintilla;
                 document.getElementById('about-us').textContent = translations.about_us;
                 document.getElementById('services').textContent = translations.services;
                 document.getElementById('movonte-way').textContent = translations.movonte_way;
                 document.getElementById('schedule-consultation').textContent = translations.schedule_consultation;
                 document.getElementById('start-now').textContent = translations.start_now;
                 document.getElementById('intro-paragraph').textContent = translations.intro_paragraph;
+                document.getElementById('core-mission').textContent = translations.core_mission;
                 document.getElementById('contact-us').textContent = translations.contact_us;
                 document.getElementById('lets-work-together').textContent = translations.lets_work_together;
                 document.getElementById('footer').textContent = translations.footer;
+                document.getElementById('simplify-innovation').innerHTML = translations.simplify_innovation + '<br>' + translations.driving_results;
+                document.getElementById('streamline-operations').innerHTML = translations.streamline_operations;
             })
             .catch(error => console.error('Error loading translations:', error));
     }
@@ -33,10 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Detect language preference and load translations
     const userLanguage = navigator.language.slice(0, 2); // Get the first two letters of the browser language
     if (userLanguage === 'es') {
-        languageSelect.value = 'es';
         loadTranslations('es');
     } else {
-        languageSelect.value = 'en';
         loadTranslations('en');
     }
 });
