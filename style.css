@@ -75,14 +75,16 @@ body {
 
 .contenido-portada {
   position: absolute;
-  top: 40%;  /* Baja aún más este valor para mover el contenido más arriba */
+  top: 40%; /* Baja aún más este valor para mover el contenido más arriba */
   left: 10%;
-  transform: translateY(-50%);  /* Ajusta el valor de -50% a algo como -60% para subir más */
-  text-align: left;  /* Asegura que el texto esté alineado a la izquierda */
+  transform: translateY(
+    -50%
+  ); /* Ajusta el valor de -50% a algo como -60% para subir más */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
   max-width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  /* Alinea todos los elementos a la izquierda */
+  align-items: flex-start; /* Alinea todos los elementos a la izquierda */
 }
 
 .contenido-portada h1 {
@@ -149,21 +151,28 @@ body {
   display: inline-block; /* Para que los logos no se rompan en varias líneas */
 }
 
+.contact a:first-child img {
+  width: 17px;  /* Ajusta el tamaño del ícono de LinkedIn */
+  height: 17px; /* Especifica la altura también */
+}
+
 .contact a:hover {
   transform: scale(1.1);
   color: #fc5e51;
 }
 
 .contact img {
-  width: 30px;  /* Ajusta el tamaño del SVG */
+  width: 30px; /* Ajusta el tamaño del SVG */
   height: 30px; /* Especifica la altura también */
-  transition: transform 0.3s ease, filter 0.3s ease;  /* Añade transición para el hover */
-  filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) hue-rotate(180deg) brightness(106%) contrast(101%); /* Color inicial #69AAff */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Añade transición para el hover */
+  filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%)
+    hue-rotate(180deg) brightness(106%) contrast(101%); /* Color inicial #69AAff */
 }
 
 .contact a:hover img {
-  transform: scale(1.1);  /* Aumenta el tamaño del ícono al hacer hover */
-  filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) hue-rotate(30deg) brightness(106%) contrast(101%); /* Cambia el color a #fc5e51 */
+  transform: scale(1.1); /* Aumenta el tamaño del ícono al hacer hover */
+  filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%)
+    hue-rotate(320deg) brightness(106%) contrast(101%); /* Cambia el color a #fc5e51 */
 }
 
 .cintilla-footer {
