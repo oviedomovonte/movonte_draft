@@ -42,18 +42,24 @@ body {
     text-decoration: none;
 }
 
+/* Estilos para el botón "Schedule a Consultation" */
 .menu .menu-items .button {
-    background-color: #69AAF;
+    background-color: #69AAF; /* Color inicial */
     color: #fff;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 25px; /* Bordes redondeados */
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
+    text-decoration: none; /* Elimina el subrayado si es un enlace */
+    display: inline-block; /* Para que no ocupe todo el ancho */
+    font-family: 'Darker Grotesque', Arial, sans-serif; /* Asegura que use la misma fuente */
+    font-weight: 700; /* Texto en negrita */
+    border: none; /* Elimina el borde si lo tiene */
 }
 
 .menu .menu-items .button:hover {
-    transform: scale(1.1);
-    background-color: #FC5e51;
+    transform: scale(1.1); /* Crece ligeramente */
+    background-color: #FC5e51; /* Cambia de color al pasar el cursor */
 }
 
 .portada {
@@ -156,6 +162,8 @@ footer {
     text-align: center;
     padding: 10px 20px;
 }
+
+/* Estilos para el botón "Schedule a Consultation" */
 .menu .menu-items .button {
     background-color: #69AAF; /* Color inicial */
     color: #fff;
@@ -163,7 +171,7 @@ footer {
     border-radius: 25px; /* Bordes redondeados */
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
-    text-decoration: none; /* Elimina el subrayado si es un enlace */
+    text-decoration: none; /* Elimina el subrayado */
     display: inline-block; /* Para que no ocupe todo el ancho */
     font-family: 'Darker Grotesque', Arial, sans-serif; /* Asegura que use la misma fuente */
     font-weight: 700; /* Texto en negrita */
@@ -173,8 +181,4 @@ footer {
 .menu .menu-items .button:hover {
     transform: scale(1.1); /* Crece ligeramente */
     background-color: #FC5e51; /* Cambia de color al pasar el cursor */
-}
-.menu .menu-items {
-    display: flex;
-    align-items: center;
 }
