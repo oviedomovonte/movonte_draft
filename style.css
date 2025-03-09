@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body {
+    font-size: 19px; /* Ajusta según lo necesites: 18px, 19px o 20px */
+}
 
 .cintilla {
   background-color: #0474ef;
@@ -160,4 +163,22 @@ body {
 footer {
   text-align: center;
   padding: 10px 20px;
+}
+.contact {
+    text-align: center; /* Centra todo el contenido dentro del div */
+}
+
+.contact p {
+    margin-bottom: 10px; /* Espacio entre el texto y los iconos */
+}
+.contact p {
+    text-align: center !important; /* Sobrescribe cualquier justificación previa */
+    margin-bottom: 10px; /* Espacio entre el texto y los iconos */
+}
+
+.contenido-portada {
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Asegura que todo el contenido dentro esté alineado a la izquierda */
 }
