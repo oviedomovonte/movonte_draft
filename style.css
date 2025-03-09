@@ -20,6 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  position: relative;
 }
 
 .menu .logo {
@@ -224,6 +225,7 @@ footer {
         top: 60px;
         left: 0;
         background-color: #000;
+        z-index: 1;
     }
 
     .menu .menu-items a {
@@ -255,5 +257,9 @@ footer {
     .contenido-portada .button {
         padding: 8px 16px;
         font-size: 1em;
+    }
+
+    .content p {
+        margin-top: 30px; /* Añade un margen superior al primer párrafo */
     }
 }
