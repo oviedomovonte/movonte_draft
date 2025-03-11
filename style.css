@@ -361,3 +361,15 @@ footer {
         white-space: pre-line; /* Permite el salto de línea */
     }
 }
+
+#simplify_innovation {
+    line-height: 1; /* Ajusta este valor según necesites */
+}
+
+#simplify_innovation {
+    font-size: 3.5 rem; /* Ajusta según lo necesites */
+}
+
+body {
+    font-size: 1.3em; /* Ajusta el valor según lo necesites */
+}
