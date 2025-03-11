@@ -310,3 +310,25 @@ footer {
     height: 28px;
     transform: scale(0.97); /* 25% más pequeño */
 }
+
+.imagen-espacio img {
+    width: 42%; /* Reduce la imagen al 50% de su tamaño original */
+    height: auto; /* Mantiene la proporción */
+}
+
+.imagen-espacio {
+    display: flex;
+    justify-content: center; /* Centra la imagen si es necesario */
+    margin: 20px 0; /* Ajusta el espacio arriba y abajo de la imagen */
+}
+
+.imagen-espacio img {
+    width: 50%; /* Reduce la imagen al 50% */
+    height: auto;
+}
+
+#intro_paragraph,
+#core_mission {
+    text-align: center; /* Opcional si quieres centrar el texto */
+    margin-bottom: 20px; /* Ajusta la separación con la imagen */
+}
