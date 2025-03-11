@@ -155,8 +155,8 @@ body {
 /* Sección de Contacto */
 .contact {
     display: flex;
-    justify-content: center; /* Centra todo en línea */
-    align-items: center; /* Alinea verticalmente */
+    flex-direction: column; /* Apila los elementos */
+    align-items: center; /* Centra el contenido */
     gap: 10px;
     padding: 20px 0;
 }
@@ -164,17 +164,19 @@ body {
 .contact p {
     margin: 0;
     font-size: 1.2rem;
-    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
 }
 
-.contact a {
+.contact-icons {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px; /* Espacio entre los íconos */
 }
 
+/* Ajuste del tamaño de los íconos */
 .contact a img {
-    width: 30px;
+    width: 30px;  /* Tamaño uniforme */
     height: 30px;
     object-fit: contain;
     display: block;
@@ -182,6 +184,12 @@ body {
     transition: transform 0.3s ease, filter 0.3s ease;
     filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
         hue-rotate(180deg) brightness(106%) contrast(101%); /* Color inicial */
+}
+
+/* Ajuste para el primer ícono (LinkedIn) */
+.contact a:nth-of-type(1) img {
+    width: 28px; /* Se redujo un poco el primer ícono */
+    height: 28px;
 }
 
 .contact a:hover img {
@@ -290,52 +298,15 @@ footer {
     line-height: 1;
     font-size: 3.5rem;
 }
-/* Sección de Contacto */
-.contact {
-    display: flex;
-    flex-direction: column; /* Apila los elementos */
-    align-items: center; /* Centra el contenido */
-    gap: 10px;
-    padding: 20px 0;
-}
-
-.contact p {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.contact-icons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.contact a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact a img {
-    width: 28px;  /* Tamaño uniforme */
-    height: 28px;
-    object-fit: contain;
-    display: block;
-    vertical-align: middle;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
-        hue-rotate(180deg) brightness(106%) contrast(101%);
-}
-
+/* Ajuste para el primer ícono (LinkedIn) */
 .contact a:nth-of-type(1) img {
-    width: 26px; /* Se redujo un poco el primer ícono */
-    height: 26px;
+    width: 28px; /* Se redujo un poco el primer ícono */
+    height: 28px;
+    transform: scale(0.73); /* Reduce el tamaño al 80% (20% menos) */
 }
-
-.contact a:hover img {
-    transform: scale(1.1);
-    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
-        hue-rotate(320deg) brightness(106%) contrast(101%);
+/* Ajuste para el segundo ícono (Instagram) */
+.contact a:nth-of-type(2) img {
+    width: 28px;
+    height: 28px;
+    transform: scale(0.97); /* 25% más pequeño */
 }
