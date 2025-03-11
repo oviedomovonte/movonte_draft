@@ -1,243 +1,209 @@
+/* Estilos generales */
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: "Darker Grotesque", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 19px; /* Ajusta el tamaño base del texto */
+    background-color: #000;
+    color: #fff;
+    font-family: "Darker Grotesque", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em; /* Ajusta el tamaño base del texto */
 }
 
+/* Cintilla superior */
 .cintilla {
-  background-color: #0474ef;
-  color: #fff;
-  text-align: left;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #0474ef;
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .language-selector {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .language-select {
-  background-color: #000;
-  color: #69aaff; /* Azul corporativo */
-  border: 1px solid #69aaff;
-  padding: 3.75px; /* Reducido en un 25% */
-  font-size: 0.75em; /* Reducido en un 25% */
-  cursor: pointer;
-  border-radius: 5px;
+    background-color: #000;
+    color: #69aaff; /* Azul corporativo */
+    border: 1px solid #69aaff;
+    padding: 3.75px; /* Reducido en un 25% */
+    font-size: 0.75em;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .language-select option {
-  background-color: #000;
-  color: #69aaff; /* Azul corporativo */
+    background-color: #000;
+    color: #69aaff;
 }
 
+/* Menú */
 .menu {
-  background-color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  position: relative;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
 }
 
 .menu .logo {
-  width: 150px;
-  height: auto;
+    width: 150px;
+    height: auto;
 }
 
 .menu .logo img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .menu .menu-items {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .menu .menu-items a {
-  color: #fff;
-  margin-right: 20px;
-  text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
 }
 
-/* Estilos para el botón "Schedule a Consultation" */
+/* Botón "Schedule a Consultation" */
 .menu .menu-items .button {
-  background-color: #69aaff; /* Color inicial */
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px; /* Bordes redondeados */
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
-  text-decoration: none; /* Elimina el subrayado */
-  display: inline-block; /* Para que no ocupe todo el ancho */
-  font-family: "Darker Grotesque", Arial, sans-serif; /* Asegura que use la misma fuente */
-  font-weight: 700; /* Texto en negrita */
+    background-color: #69aaff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
 }
 
 .menu .menu-items .button:hover {
-  transform: scale(1.1); /* Crece ligeramente */
-  background-color: #fc5e51; /* Cambia de color al pasar el cursor */
+    transform: scale(1.1);
+    background-color: #fc5e51;
 }
 
+/* Portada */
 .portada {
-  position: relative;
-  text-align: left;
+    position: relative;
+    text-align: left;
 }
 
 .portada img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .contenido-portada {
-  position: absolute;
-  top: 40%; /* Baja aún más este valor para mover el contenido más arriba */
-  left: 10%;
-  transform: translateY(
-    -50%
-  ); /* Ajusta el valor de -50% a algo como -60% para subir más */
-  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
-  max-width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Alinea todos los elementos a la izquierda */
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .contenido-portada h1 {
-  font-size: 3em;
-  margin-bottom: 5px; /* Espacio debajo del título */
+    font-size: 3em;
+    margin-bottom: 5px;
+    line-height: 1.2;
 }
 
 .contenido-portada p {
-  font-size: 1.5em;
-  margin-top: 5px; /* Espacio arriba del subtítulo */
+    font-size: 1.5em;
+    margin-top: 5px;
 }
 
 .contenido-portada .button {
-  background-color: #fc5e51;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: transform 0.3s;
-  margin-top: 20px;
-  text-decoration: none;
-  display: inline-block; /* Para que el botón no ocupe todo el ancho */
-  font-weight: 700;
-  
-  /* Estilo por defecto */
-.streamline-operations {
-  white-space: nowrap;
-}
-
-/* Para pantallas grandes */
-@media (min-width: 768px) {
-  .streamline-operations {
-    white-space: normal; /* Permite el salto de línea */
-  }
-}
+    background-color: #fc5e51;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
 }
 
 .contenido-portada .button:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
+/* Contenido general */
 .content {
-  text-align: center;
-  padding: 50px 20px;
+    text-align: center;
+    padding: 50px 20px;
 }
 
 .content p {
-  text-align: justify;
-  margin: 0 auto 50px auto;
-  max-width: 800px; /* Ajusta según el ancho deseado */
+    text-align: justify;
+    margin: 0 auto 50px auto;
+    max-width: 800px;
 }
 
-.imagen-espacio {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.imagen-espacio img {
-  max-width: 100%;
-  height: auto;
-}
-
+/* Sección de Contacto */
 .contact {
-  text-align: center;
-  padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Centra todo en línea */
+    align-items: center; /* Alinea verticalmente */
+    gap: 10px;
+    padding: 20px 0;
 }
 
 .contact p {
-  margin-bottom: 10px; /* Espacio entre el texto y los iconos */
-  text-align: center !important; /* Sobrescribe cualquier justificación previa */
+    margin: 0;
+    font-size: 1.2rem;
+    white-space: nowrap;
 }
 
 .contact a {
-  margin: 0 10px;
-  color: #69aaff;
-  transition: transform 0.3s, color 0.3s;
-  display: inline-block; /* Para que los logos no se rompan en varias líneas */
-}
-
-.contact a:hover {
-  transform: scale(1.1);
-  color: #fc5e51;
-}
-
-.contact img {
-  width: 30px; /* Ajusta el tamaño del SVG */
-  height: 30px; /* Especifica la altura también */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Añade transición para el hover */
-  filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%)
-    hue-rotate(180deg) brightness(106%) contrast(101%); /* Color inicial #69AAff */
-}
-
-.contact a:hover img {
-  transform: scale(1.1); /* Aumenta el tamaño del ícono al hacer hover */
-  filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%)
-    hue-rotate(320deg) brightness(106%) contrast(101%); /* Cambia el color a #fc5e51 */
-}
-
-.cintilla-footer {
-  background-color: #0474ef;
-  text-align: center;
-  padding: 10px 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px 20px;
-}
-
-.contact a:nth-of-type(1) img {
-  width: 25px;  /* Ajusta el tamaño del ícono de LinkedIn */
-  height: 25px; /* Especifica la altura también */
-  margin-top: -8px; /* Mueve solo el ícono de LinkedIn hacia arriba */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact a img {
-  width: 30px;  /* Ajusta el tamaño de los íconos */
-  height: 30px; /* Especifica la altura también */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Añade transición para el hover */
-  vertical-align: middle;  /* Alinea los íconos verticalmente */
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    display: block;
+    vertical-align: middle;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
+        hue-rotate(180deg) brightness(106%) contrast(101%); /* Color inicial */
 }
 
-.contact a:nth-of-type(1) img {
-  width: 25px;  /* Ajusta el tamaño del ícono de LinkedIn */
-  height: 25px; /* Especifica la altura también */
-  margin-top: -2px; /* Mueve el ícono de LinkedIn hacia arriba */
+.contact a:hover img {
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
+        hue-rotate(320deg) brightness(106%) contrast(101%);
 }
 
-/* Estilos para el menú hamburguesa */
+/* Cintilla footer */
+.cintilla-footer {
+    background-color: #0474ef;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Menú hamburguesa para móviles */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -296,81 +262,80 @@ footer {
     }
 
     .content p {
-        margin-top: 30px; /* Añade un margen superior al primer párrafo */
+        margin-top: 30px;
     }
 
     #intro-paragraph {
-        margin-top: 60px; /* Añade un margen superior al párrafo en móvil */
+        margin-top: 60px;
     }
 }
 
+/* Ajustes para evitar desbordamiento de palabras */
 .streamline-operations {
-    white-space: nowrap; /* No se partirá en móviles */
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
 }
 
-/* Para pantallas más grandes */
+/* Ajustes en pantallas grandes */
 @media (min-width: 768px) {
     .streamline-operations {
-        white-space: normal; /* Permite el salto de línea */
-    }
-}
-.streamline-operations {
-    white-space: nowrap; /* No se partirá en móviles */
-}
-
-/* Para pantallas más grandes */
-@media (min-width: 768px) {
-    .streamline-operations {
-        white-space: normal; /* Permite el salto de línea */
-    }
-}.streamline-operations {
-    white-space: nowrap; /* No se partirá en móviles */
-    word-wrap: break-word; /* Permite el ajuste de palabras largas */
-    overflow-wrap: break-word; /* Permite el ajuste de palabras largas */
-}
-
-/* Para pantallas más grandes */
-@media (min-width: 768px) {
-    .streamline-operations {
-        white-space: normal; /* Permite el salto de línea */
-    }
-}
-.streamline-operations {
-    white-space: normal; /* Permite el salto de línea */
-    word-wrap: break-word; /* Permite el ajuste de palabras largas */
-    overflow-wrap: break-word; /* Permite el ajuste de palabras largas */
-    text-align: center; /* Centra el texto */
-}
-
-/* Para pantallas más grandes */
-@media (min-width: 768px) {
-    .streamline-operations {
-        white-space: pre-line; /* Permite el salto de línea */
-    }
-}
-.streamline-operations {
-    white-space: normal; /* Permite el salto de línea */
-    word-wrap: break-word; /* Permite el ajuste de palabras largas */
-    overflow-wrap: break-word; /* Permite el ajuste de palabras largas */
-    text-align: left; /* Justifica el texto a la izquierda */
-}
-
-/* Para pantallas más grandes */
-@media (min-width: 768px) {
-    .streamline-operations {
-        white-space: pre-line; /* Permite el salto de línea */
+        white-space: pre-line;
     }
 }
 
+/* Ajuste del tamaño de los títulos */
 #simplify_innovation {
-    line-height: 1; /* Ajusta este valor según necesites */
+    line-height: 1;
+    font-size: 3.5rem;
+}
+/* Sección de Contacto */
+.contact {
+    display: flex;
+    flex-direction: column; /* Apila los elementos */
+    align-items: center; /* Centra el contenido */
+    gap: 10px;
+    padding: 20px 0;
 }
 
-#simplify_innovation {
-    font-size: 3.5 rem; /* Ajusta según lo necesites */
+.contact p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
-body {
-    font-size: 1.3em; /* Ajusta el valor según lo necesites */
+.contact-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+.contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact a img {
+    width: 28px;  /* Tamaño uniforme */
+    height: 28px;
+    object-fit: contain;
+    display: block;
+    vertical-align: middle;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
+        hue-rotate(180deg) brightness(106%) contrast(101%);
+}
+
+.contact a:nth-of-type(1) img {
+    width: 26px; /* Se redujo un poco el primer ícono */
+    height: 26px;
+}
+
+.contact a:hover img {
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
+        hue-rotate(320deg) brightness(106%) contrast(101%);
+}
