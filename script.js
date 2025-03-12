@@ -43,3 +43,20 @@ document.addEventListener('DOMContentLoaded', function () {
         loadTranslations('en');
     }
 });
+
+// Detectar idioma y tamaño de pantalla
+function adjustContentForSpanishMobile() {
+    const language = document.getElementById('language-select').value; // Obtener el idioma seleccionado
+    const isMobile = window.innerWidth <= 768; // Detectar si es móvil
+
+    if (language === 'es' && isMobile) {
+        document.body.classList.add('es-mobile'); // Agregar clase si es español y móvil
+    } else {
+        document.body.classList.remove('es-mobile'); // Remover clase si no es español o no es móvil
+    }
+}
+
+// Ejecutar al cargar la página y al cambiar el idioma o el tamaño de la pantalla
+window.addEventListener('load', adjustContentForSpanishMobile);
+window.addEventListener('resize', adjustContentForSpanishMobile);
+document.getElementById('language-select').addEventListener('change', adjustContentForSpanishMobile);

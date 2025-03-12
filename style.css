@@ -356,3 +356,13 @@ footer {
         margin-top: 10px; /* Bajar el botón 1 centímetro (10px) */
     }
 }
+
+/* Ajustes en móvil para español */
+@media (max-width: 768px) {
+    .es-mobile #intro_paragraph,
+    .es-mobile #core_mission,
+    .es-mobile .imagen-espacio,
+    .es-mobile .contact {
+        margin-top: 10px; /* Mover el contenido 1 centímetro hacia abajo */
+    }
+}
