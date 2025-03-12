@@ -395,7 +395,7 @@ footer {
 
 /* Hover para SVG */
 .contact-icons a:hover img {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(280deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
   transform: scale(1.1); /* Crece un 10% */
   transition: filter 0.3s ease, transform 0.3s ease;
 }
