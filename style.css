@@ -5,7 +5,7 @@ body {
     font-family: "Darker Grotesque", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 1.5em; /* Ajusta el tamaño base del texto */
+    font-size: 1.5em; /* Tamaño ideal en desktop */
 }
 
 /* Cintilla superior */
@@ -19,26 +19,6 @@ body {
     align-items: center;
 }
 
-.language-selector {
-    display: flex;
-    gap: 10px;
-}
-
-.language-select {
-    background-color: #000;
-    color: #69aaff; /* Azul corporativo */
-    border: 1px solid #69aaff;
-    padding: 3.75px; /* Reducido en un 25% */
-    font-size: 0.75em;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.language-select option {
-    background-color: #000;
-    color: #69aaff;
-}
-
 /* Menú */
 .menu {
     background-color: #000;
@@ -49,19 +29,9 @@ body {
     position: relative;
 }
 
-.menu .logo {
-    width: 150px;
-    height: auto;
-}
-
 .menu .logo img {
     width: 100%;
     height: auto;
-}
-
-.menu .menu-items {
-    display: flex;
-    align-items: center;
 }
 
 .menu .menu-items a {
@@ -146,31 +116,30 @@ body {
     padding: 50px 20px;
 }
 
-/* Ajuste de párrafos */
 #intro_paragraph,
 #core_mission {
-    text-align: justify; /* Justifica el texto */
-    margin: 0 auto 20px auto; /* Espaciado uniforme */
+    text-align: justify;
+    margin: 0 auto 20px auto;
     max-width: 800px;
 }
 
-/* Ajuste de imagen con espacio proporcional */
+/* Imagen con espaciado proporcional */
 .imagen-espacio {
     display: flex;
     justify-content: center;
-    margin: 20px 0; /* Espaciado uniforme arriba y abajo */
+    margin: 20px 0;
 }
 
 .imagen-espacio img {
-    width: 50%; /* Reduce la imagen al 50% */
+    width: 50%;
     height: auto;
 }
 
 /* Sección de Contacto */
 .contact {
     display: flex;
-    flex-direction: column; /* Apila los elementos */
-    align-items: center; /* Centra el contenido */
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
     padding: 20px 0;
 }
@@ -180,45 +149,6 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-}
-
-.contact-icons {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espacio entre los íconos */
-}
-
-/* Ajuste del tamaño de los íconos */
-.contact a img {
-    width: 30px;  /* Tamaño uniforme */
-    height: 30px;
-    object-fit: contain;
-    display: block;
-    vertical-align: middle;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
-        hue-rotate(180deg) brightness(106%) contrast(101%); /* Color inicial */
-}
-
-/* Ajuste para el primer ícono (LinkedIn) */
-.contact a:nth-of-type(1) img {
-    width: 28px; /* Se redujo un poco el primer ícono */
-    height: 28px;
-    transform: scale(0.739); /* Reduce el tamaño al 80% */
-}
-
-/* Ajuste para el segundo ícono (Instagram) */
-.contact a:nth-of-type(2) img {
-    width: 28px;
-    height: 28px;
-    transform: scale(0.97); /* 25% más pequeño */
-}
-
-/* Cintilla footer */
-.cintilla-footer {
-    background-color: #0474ef;
-    text-align: center;
-    padding: 10px 20px;
 }
 
 /* Footer */
@@ -241,7 +171,13 @@ footer {
     width: 25px;
 }
 
+/* ======== OPTIMIZACIÓN PARA MÓVILES ======== */
 @media (max-width: 768px) {
+    /* Tamaño de fuente base en móviles */
+    body {
+        font-size: 1em; /* Ajuste para tamaño natural */
+    }
+
     .menu .menu-items {
         display: none;
         flex-direction: column;
@@ -272,6 +208,7 @@ footer {
         transform: translateY(-30%);
     }
 
+    /* Ajustes de tamaño de texto en móviles */
     .contenido-portada h1 {
         font-size: 2em;
     }
@@ -288,9 +225,14 @@ footer {
     .content p {
         margin-top: 30px;
     }
+
+    /* Tamaño de imagen más pequeño en móviles */
+    .imagen-espacio img {
+        width: 80%;
+    }
 }
 
-/* Ajustes en pantallas grandes */
+/* ======== AJUSTES PARA PANTALLAS GRANDES ======== */
 @media (min-width: 768px) {
     .streamline-operations {
         white-space: pre-line;
