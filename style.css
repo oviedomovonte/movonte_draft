@@ -114,14 +114,14 @@ body {
 
 .contenido-portada h1 {
     font-size: 3em;
-    margin-bottom: 0px; /* Reducir el espacio entre el título y subtítulo */
+    margin-bottom: 0; /* Reducir el espacio entre el título y subtítulo */
     line-height: 1.2;
 }
 
 .contenido-portada p {
     font-size: 1.5em;
-    margin-top: 0px; /* Reducir el espacio entre el título y el subtítulo */
-    margin-bottom: 10px; /* Espacio entre el subtítulo y el botón */
+    margin-top: 0; /* Reducir el espacio entre el título y el subtítulo */
+    margin-bottom: 0; /* Espacio entre el subtítulo y el botón */
 }
 
 .contenido-portada .button {
@@ -131,7 +131,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.3s;
-    margin-top: 10px; /* Espacio entre el subtítulo y el botón */
+    margin-top: 0; /* Espacio entre el subtítulo y el botón */
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
@@ -299,19 +299,18 @@ footer {
     }
 }
 
-/* Ajustes en pantallas grandes */
+/* Ajustes en pantallas grandes (Desktop) */
 @media (min-width: 768px) {
     .contenido-portada h1 {
-        margin-bottom: 10px; /* Espacio entre el título y subtítulo */
+        margin-bottom: 20px; /* Espacio entre el título y el párrafo */
     }
 
     .contenido-portada p {
-        margin-top: 5px; /* Espacio entre el subtítulo y el botón */
-        margin-bottom: 10px; /* Espacio entre el subtítulo y el botón */
+        margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
     }
 
     .contenido-portada .button {
-        margin-top: 10px; /* Ajustar el margen superior del botón */
+        margin-top: 0; /* Eliminar margen superior del botón */
     }
 
     .imagen-espacio img {
@@ -327,4 +326,27 @@ footer {
 #simplify_innovation {
     line-height: 1;
     font-size: 3.5rem;
+}
+/* Ajustes en pantallas grandes (Desktop) */
+@media (min-width: 768px) {
+    .contenido-portada h1 {
+        margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+    }
+
+    .contenido-portada p.streamline-operations {
+        margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
+        margin-top: -50px; /* Subir el párrafo 1 centímetro (10px) */
+    }
+
+    .contenido-portada .button {
+        margin-top: 0; /* Eliminar margen superior del botón */
+    }
+
+    .imagen-espacio img {
+        width: 50%; /* Reducir al 50% la imagen de los partners */
+    }
+
+    .streamline-operations {
+        white-space: pre-line;
+    }
 }
