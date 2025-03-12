@@ -120,8 +120,8 @@ body {
 
 .contenido-portada p {
     font-size: 1.5em;
-    margin-top: -10px; /* Reducir el espacio entre el título y el subtítulo */
-    margin-bottom: 10px; /* Reducir el espacio entre el subtítulo y el botón */
+    margin-top: 0px; /* Reducir el espacio entre el título y el subtítulo */
+    margin-bottom: 10px; /* Espacio entre el subtítulo y el botón */
 }
 
 .contenido-portada .button {
@@ -131,7 +131,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.3s;
-    margin-top: 10px; /* Reducir el espacio entre el subtítulo y el botón */
+    margin-top: 10px; /* Espacio entre el subtítulo y el botón */
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
@@ -302,16 +302,16 @@ footer {
 /* Ajustes en pantallas grandes */
 @media (min-width: 768px) {
     .contenido-portada h1 {
-        margin-bottom: 0px; /* Reducir el espacio entre el título y subtítulo */
+        margin-bottom: 10px; /* Espacio entre el título y subtítulo */
     }
 
     .contenido-portada p {
-        margin-top: -10px; /* Reducir el espacio entre el título y el subtítulo */
-        margin-bottom: 10px; /* Reducir el espacio entre el subtítulo y el botón */
+        margin-top: 5px; /* Espacio entre el subtítulo y el botón */
+        margin-bottom: 10px; /* Espacio entre el subtítulo y el botón */
     }
 
     .contenido-portada .button {
-        margin-top: 5px; /* Ajustar el margen superior del botón */
+        margin-top: 10px; /* Ajustar el margen superior del botón */
     }
 
     .imagen-espacio img {
