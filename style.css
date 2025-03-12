@@ -5,7 +5,7 @@ body {
     font-family: "Darker Grotesque", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 1.3em; /* Ajusta el tamaño base del texto */
+    font-size: 1.5em; /* Ajusta el tamaño base del texto */
 }
 
 /* Cintilla superior */
@@ -146,10 +146,24 @@ body {
     padding: 50px 20px;
 }
 
-.content p {
-    text-align: justify;
-    margin: 0 auto 50px auto;
+/* Ajuste de párrafos */
+#intro_paragraph,
+#core_mission {
+    text-align: justify; /* Justifica el texto */
+    margin: 0 auto 20px auto; /* Espaciado uniforme */
     max-width: 800px;
+}
+
+/* Ajuste de imagen con espacio proporcional */
+.imagen-espacio {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Espaciado uniforme arriba y abajo */
+}
+
+.imagen-espacio img {
+    width: 50%; /* Reduce la imagen al 50% */
+    height: auto;
 }
 
 /* Sección de Contacto */
@@ -190,12 +204,14 @@ body {
 .contact a:nth-of-type(1) img {
     width: 28px; /* Se redujo un poco el primer ícono */
     height: 28px;
+    transform: scale(0.739); /* Reduce el tamaño al 80% */
 }
 
-.contact a:hover img {
-    transform: scale(1.1);
-    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
-        hue-rotate(320deg) brightness(106%) contrast(101%);
+/* Ajuste para el segundo ícono (Instagram) */
+.contact a:nth-of-type(2) img {
+    width: 28px;
+    height: 28px;
+    transform: scale(0.97); /* 25% más pequeño */
 }
 
 /* Cintilla footer */
@@ -272,18 +288,6 @@ footer {
     .content p {
         margin-top: 30px;
     }
-
-    #intro-paragraph {
-        margin-top: 60px;
-    }
-}
-
-/* Ajustes para evitar desbordamiento de palabras */
-.streamline-operations {
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-align: left;
 }
 
 /* Ajustes en pantallas grandes */
@@ -297,38 +301,4 @@ footer {
 #simplify_innovation {
     line-height: 1;
     font-size: 3.5rem;
-}
-/* Ajuste para el primer ícono (LinkedIn) */
-.contact a:nth-of-type(1) img {
-    width: 28px; /* Se redujo un poco el primer ícono */
-    height: 28px;
-    transform: scale(0.73); /* Reduce el tamaño al 80% (20% menos) */
-}
-/* Ajuste para el segundo ícono (Instagram) */
-.contact a:nth-of-type(2) img {
-    width: 28px;
-    height: 28px;
-    transform: scale(0.97); /* 25% más pequeño */
-}
-
-.imagen-espacio img {
-    width: 42%; /* Reduce la imagen al 50% de su tamaño original */
-    height: auto; /* Mantiene la proporción */
-}
-
-.imagen-espacio {
-    display: flex;
-    justify-content: center; /* Centra la imagen si es necesario */
-    margin: 20px 0; /* Ajusta el espacio arriba y abajo de la imagen */
-}
-
-.imagen-espacio img {
-    width: 50%; /* Reduce la imagen al 50% */
-    height: auto;
-}
-
-#intro_paragraph,
-#core_mission {
-    text-align: center; /* Opcional si quieres centrar el texto */
-    margin-bottom: 20px; /* Ajusta la separación con la imagen */
 }
