@@ -130,7 +130,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.3s;
-    margin-top: 10px; /* Subir el botón medio cm */
+    margin-top: 0px; /* Subir el botón medio cm */
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
@@ -278,17 +278,17 @@ footer {
 
     .contenido-portada p {
         font-size: 1em; /* Reducción del tamaño de fuente */
-        margin-top: 15px; /* Bajar el primer párrafo .75 cm */
+        margin-top: 30px; /* Bajar el primer párrafo 1 cm */
     }
 
     .contenido-portada .button {
         padding: 8px 16px;
         font-size: 0.8em; /* Reducción del tamaño de fuente */
-        margin-top: 20px; /* Subir el botón medio cm */
+        margin-top: 0px; /* Subir el botón medio cm */
     }
 
-    .content p {
-        margin-top: 60px;
+    .content {
+        margin-top: 100px; /* Bajar todo el contenido 1 cm */
     }
 }
 
