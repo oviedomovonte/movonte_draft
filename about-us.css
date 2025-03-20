@@ -68,6 +68,7 @@ body {
     color: #fff;
     margin-right: 20px;
     text-decoration: none;
+    line-height: 50px; /* Ajuste de alineación vertical */
 }
 
 /* Botón "Schedule a Consultation" */
@@ -173,6 +174,40 @@ body {
     margin: 0 auto 20px auto;
 }
 
+/* Redes Sociales */
+.contact-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+/* Ajuste del tamaño de los íconos */
+.contact a img {
+    width: 30px;  /* Tamaño uniforme */
+    height: 30px;
+    object-fit: contain;
+    display: block;
+    vertical-align: middle;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) 
+        hue-rotate(180deg) brightness(106%) contrast(101%); /* Color inicial */
+}
+
+/* Ajuste para el primer ícono (LinkedIn) */
+.contact a:nth-of-type(1) img {
+    width: 28px; /* Se redujo un poco el primer ícono */
+    height: 28px;
+    transform: scale(0.739); /* Reduce el tamaño al 80% */
+}
+
+/* Ajuste para el segundo ícono (Instagram) */
+.contact a:nth-of-type(2) img {
+    width: 28px;
+    height: 28px;
+    transform: scale(0.97); /* 25% más pequeño */
+}
+
 .footer-section {
     background-color: #000;
     text-align: center;
@@ -181,6 +216,7 @@ body {
 
 .footer-text p {
     margin: 0;
+    text-align: center;
 }
 
 .social-media {
