@@ -68,14 +68,14 @@ body {
     color: #fff;
     margin-right: 20px;
     text-decoration: none;
-    line-height: 50px; /* Ajuste de alineación vertical */
+    margin-top: 3mm; /* Añadir margen superior para bajar los enlaces */
 }
 
 /* Botón "Schedule a Consultation" */
 .menu .menu-items .button {
     background-color: #69aaff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 20px; /* Reducido el padding vertical */
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
@@ -144,7 +144,7 @@ body {
 .button {
     background-color: #69aaff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 20px; /* Reducido el padding vertical */
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
@@ -175,6 +175,21 @@ body {
 }
 
 /* Redes Sociales */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Ajuste del tamaño de los íconos */
 .contact-icons {
     display: flex;
     align-items: center;
@@ -182,8 +197,7 @@ body {
     gap: 10px; /* Espacio entre los íconos */
 }
 
-/* Ajuste del tamaño de los íconos */
-.contact a img {
+.contact-icons a img {
     width: 30px;  /* Tamaño uniforme */
     height: 30px;
     object-fit: contain;
@@ -194,56 +208,28 @@ body {
         hue-rotate(180deg) brightness(106%) contrast(101%); /* Color inicial */
 }
 
-/* Ajuste para el primer ícono (LinkedIn) */
-.contact a:nth-of-type(1) img {
+.contact-icons a:nth-of-type(1) img {
     width: 28px; /* Se redujo un poco el primer ícono */
     height: 28px;
-    transform: scale(0.739); /* Reduce el tamaño al 80% */
+    transform: scale(0.739); /* Reduce el tamaño al 73.9% */
 }
 
-/* Ajuste para el segundo ícono (Instagram) */
-.contact a:nth-of-type(2) img {
-    width: 28px;
-    height: 28px;
-    transform: scale(0.97); /* 25% más pequeño */
-}
-
-.footer-section {
-    background-color: #000;
-    text-align: center;
-    padding: 20px;
-}
-
-.footer-text p {
-    margin: 0;
-    text-align: center;
-}
-
-.social-media {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.social-media a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.social-media a img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s;
-}
-
-.social-media a:hover img {
-    transform: scale(1.1);
-    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%);
+/* Hover para SVG */
+.contact-icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(338deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+  transform: scale(1.1); /* Crece un 10% */
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 /* Cintilla footer */
 .cintilla-footer {
     background-color: #0474ef;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Footer */
+footer {
     text-align: center;
     padding: 10px 20px;
 }
@@ -321,7 +307,7 @@ body {
 
 /* Hover para SVG */
 .contact-icons a:hover img {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(338deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
   transform: scale(1.1); /* Crece un 10% */
   transition: filter 0.3s ease, transform 0.3s ease;
 }
