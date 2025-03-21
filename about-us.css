@@ -132,7 +132,7 @@ body {
 }
 
 .card img {
-    width: 100%;
+    width: 66%;
     height: auto;
     border-radius: 10px 10px 0 0;
 }
@@ -310,4 +310,16 @@ footer {
   filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
   transform: scale(1.1); /* Crece un 10% */
   transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.about-us-image {
+    /* Fondo transparente por defecto */
+    background-color: transparent; 
+    text-align: center; /* Centra la imagen dentro del div */
+}
+
+.about-us-image img {
+    /* Reducción al 50% del tamaño original */
+    width: 50%;
+    height: auto; /* Mantiene la relación de aspecto */
 }
