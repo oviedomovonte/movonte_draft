@@ -17,10 +17,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
 .language-selector {
@@ -50,10 +46,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 50px; /* Debajo de la cintilla superior */
-    z-index: 999;
 }
 
 .menu .logo {
@@ -102,7 +94,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 50px 20px;
-    margin-top: 100px; /* Espacio para la cintilla y el menú */
 }
 
 .about-us-text {
@@ -112,8 +103,13 @@ body {
 
 .about-us-image {
     flex: 1;
-    background-color: #333;
-    /* Espacio para la imagen futura */
+    text-align: center;
+    background-color: transparent; /* Fondo transparente */
+}
+
+.about-us-image img {
+    width: 50%; /* Reducción al 50% del tamaño original */
+    height: auto; /* Mantiene la relación de aspecto */
 }
 
 /* Sección Our Code */
@@ -257,92 +253,26 @@ footer {
     width: 25px;
 }
 
-@media (max-width: 768px) {
-    .menu .menu-items {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #000;
-        z-index: 1;
-    }
-
-    .menu .menu-items a {
-        margin: 10px 0;
-    }
-
-    .menu .menu-items.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .contenido-portada {
-        top: 70%;
-        left: 5%;
-        transform: translateY(-50%);
-    }
-
-    .contenido-portada h1 {
-        font-size: 1.5em;
-        margin-bottom: 5px;
-        margin-top: 30px;
-    }
-
-    .contenido-portada p {
-        font-size: 1em;
-        margin-top: 20px;
-    }
-
-    .contenido-portada .button {
-        padding: 8px 16px;
-        font-size: 0.8em;
-        margin-top: -10px;
-    }
-
-    .content {
-        margin-top: 100px;
-    }
-
-    .imagen-espacio img {
-        width: 75%;
-    }
-}
-
-/* Hover para SVG */
-.contact-icons a:hover img {
-    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
-    transform: scale(1.1); /* Crece un 10% */
-    transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-.about-us-image {
-    /* Fondo transparente por defecto */
-    background-color: transparent;
-    text-align: center; /* Centra la imagen dentro del div */
-}
-
-.about-us-image img {
-    /* Reducción al 50% del tamaño original */
-    width: 50%;
-    height: auto; /* Mantiene la relación de aspecto */
-}
-
-/* Hover específico para el primer ícono (LinkedIn) */
-.contact a:nth-of-type(1):hover img {
-    transform: scale(0.769); /* Crece un 3% adicional */
-}
-
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 768px) {
+    .cintilla {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        top: 50px; /* Debajo de la cintilla superior */
+        z-index: 999;
+    }
+
     .about-section {
         flex-direction: column;
         align-items: center;
+        margin-top: 100px; /* Espacio para la cintilla y el menú */
     }
 
     .about-us-text {
@@ -357,7 +287,7 @@ footer {
     }
 
     .about-us-image img {
-        width: 100%; /* Ajusta la imagen al tamaño de la pantalla */
+        width: 50%; /* Ajusta la imagen al tamaño de la pantalla */
     }
 
     .our-code-section .cards-container {
