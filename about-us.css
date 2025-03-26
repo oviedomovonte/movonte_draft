@@ -17,6 +17,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .language-selector {
@@ -46,7 +50,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 50px; /* Debajo de la cintilla superior */
+    z-index: 999;
 }
 
 .menu .logo {
@@ -95,14 +102,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 50px 20px;
-}
-
-.about-us-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
+    margin-top: 100px; /* Espacio para la cintilla y el menú */
 }
 
 .about-us-text {
@@ -112,14 +112,8 @@ body {
 
 .about-us-image {
     flex: 1;
-    background-color: transparent; /* Fondo transparente */
-    text-align: center; /* Centra la imagen dentro del div */
-}
-
-.about-us-image img {
-    width: 80%;
-    height: auto; /* Mantiene la relación de aspecto */
-    max-width: 500px; /* Limitar el tamaño máximo */
+    background-color: #333;
+    /* Espacio para la imagen futura */
 }
 
 /* Sección Our Code */
@@ -231,9 +225,9 @@ body {
 
 /* Hover para SVG */
 .contact-icons a:hover img {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(338deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
-  transform: scale(1.1); /* Crece un 10% */
-  transition: filter 0.3s ease, transform 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(338deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+    transform: scale(1.1); /* Crece un 10% */
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 /* Cintilla footer */
@@ -264,11 +258,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .menu .menu-items {
         display: none;
         flex-direction: column;
@@ -293,69 +282,96 @@ footer {
         display: flex;
     }
 
+    .contenido-portada {
+        top: 70%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+
+    .contenido-portada h1 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        margin-top: 30px;
+    }
+
+    .contenido-portada p {
+        font-size: 1em;
+        margin-top: 20px;
+    }
+
+    .contenido-portada .button {
+        padding: 8px 16px;
+        font-size: 0.8em;
+        margin-top: -10px;
+    }
+
+    .content {
+        margin-top: 100px;
+    }
+
+    .imagen-espacio img {
+        width: 75%;
+    }
+}
+
+/* Hover para SVG */
+.contact-icons a:hover img {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+    transform: scale(1.1); /* Crece un 10% */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.about-us-image {
+    /* Fondo transparente por defecto */
+    background-color: transparent;
+    text-align: center; /* Centra la imagen dentro del div */
+}
+
+.about-us-image img {
+    /* Reducción al 50% del tamaño original */
+    width: 50%;
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Hover específico para el primer ícono (LinkedIn) */
+.contact a:nth-of-type(1):hover img {
+    transform: scale(0.769); /* Crece un 3% adicional */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
     .about-section {
         flex-direction: column;
+        align-items: center;
     }
 
     .about-us-text {
         padding-right: 0;
-        padding-top: 20px;
-        order: 1;
+        text-align: right; /* Justificado a la derecha */
+        hyphens: auto; /* Habilitar guiones automáticos */
     }
 
     .about-us-image {
-        order: 3;
+        margin-top: 20px;
+        text-align: center; /* Centra la imagen */
     }
 
     .about-us-image img {
-        width: 40%; /* Ajuste al 40% del tamaño */
+        width: 100%; /* Ajusta la imagen al tamaño de la pantalla */
     }
 
-    .cards-container {
+    .our-code-section .cards-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        margin-bottom: 20px;
+        margin: 10px 0;
+        text-align: center; /* Justificado a la derecha */
+        hyphens: auto; /* Habilitar guiones automáticos */
     }
 
-    .centered-justified-text {
-        text-align: justify;
-        text-align-last: left;
-        hyphens: auto;
-    }
-}
-
-/* Ajuste de la sección About Us en desktop */
-@media (min-width: 769px) {
-    .about-section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    .about-us-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .about-us-text {
-        flex: 1;
-        text-align: left;
-        padding-right: 40px;
-    }
-
-    .about-us-image {
-        flex: 1;
-        text-align: right;
-    }
-
-    .about-us-image img {
-        width: 80%; /* Ajustar tamaño de la imagen */
-        max-width: 500px; /* Limitar el tamaño máximo */
+    body {
+        overflow-x: hidden; /* Prevenir desplazamiento horizontal */
     }
 }
