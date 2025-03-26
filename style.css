@@ -113,7 +113,7 @@ body {
 }
 
 .contenido-portada h1 {
-    font-size: 3em;
+    font-size: 8em;
     margin-bottom: 0; /* Reducir el espacio entre el título y subtítulo */
     line-height: 1.2;
 }
