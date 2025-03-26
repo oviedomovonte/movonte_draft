@@ -387,3 +387,56 @@ html, body {
     width: 25px;
     margin: 4px 0;
 }
+@media (max-width: 768px) {
+    /* Ajustar tamaño del título About Us */
+    .about-us-text h2 {
+        font-size: 2.2em; /* Aumentar el tamaño del título */
+        font-weight: bold;
+    }
+
+    /* Alinear el título y subtítulo a la izquierda */
+    .about-us-text {
+        text-align: left; /* Alinear texto a la izquierda */
+        padding-left: 10px; /* Dar un poco de margen izquierdo */
+    }
+
+    /* Ajustar margen para el subtítulo */
+    .about-us-text p {
+        text-align: left; /* También alinearlo a la izquierda */
+        margin-left: 10px;
+    }
+}
+@media (max-width: 768px) {
+    /* Ajustar tamaño del título About Us */
+    .about-us-text h2 {
+        font-size: 2.2em; /* Aumentar tamaño */
+        font-weight: bold;
+        margin-bottom: 5px; /* Reducir espacio debajo del título */
+    }
+
+    /* Alinear el texto y reducir separación con el subtítulo */
+    .about-us-text {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    /* Ajustar margen superior del subtítulo */
+    .about-us-text p {
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 0; /* Eliminar espacio superior */
+    }
+}
+@media (min-width: 768px) {
+    /* Hacer el título más grande en desktop */
+    .about-us-text h2 {
+        font-size: 3em; /* Agrandar título en versión escritorio */
+        font-weight: bold;
+        margin-bottom: 10px; /* Mantener espaciado balanceado */
+    }
+}
+@media (min-width: 768px) {
+    .hamburger {
+        display: none !important; /* Ocultar menú hamburguesa en desktop */
+    }
+}
