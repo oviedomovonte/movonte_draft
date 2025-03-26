@@ -455,3 +455,31 @@ a.button {
     text-align: left; /* Justificado a la izquierda */
     display: inline-block;
     margin: 20px 0; /* Marg
+  
+  .card {
+    opacity: 0.77; /* Opacidad inicial del 77% */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.card:hover {
+    opacity: 1; /* Opacidad al 100% cuando se hace hover */
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+}
+.card {
+    opacity: 0.77; /* Opacidad inicial del 77% */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave para opacidad y transformación */
+}
+
+.card:hover {
+    opacity: 1; /* Opacidad al 100% cuando se hace hover */
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+}
+.card h3 {
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+.rating {
+    font-size: 2rem; /* Ajusta el tamaño de las estrellas */
+    text-align: center; /* Centra el contenido */
+    margin: 20px 0; /* Espacio alrededor */
+}
