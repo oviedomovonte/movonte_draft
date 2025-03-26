@@ -429,19 +429,21 @@ h2 {
     color: #fff;
     font-weight: normal;
     margin-bottom: 20px;
-    display: flex; /* Asegura que el h2 se comporte como un bloque alineado al h1 */
+    text-align: justify; /* Justifica el texto */
     width: 100%; /* Ocupa todo el ancho disponible */
-}
-
+    hyphens: auto; /* Permite que las palabras largas se dividan con un guion */
 }
 
 p {
     color: #fff;
-    text-align: justify;
+    text-align: justify; /* Justifica el texto */
     font-size: 1.5rem; /* Aumento del tamaño de letra */
     margin: 0 auto 20px auto;
     max-width: 800px;
+    word-wrap: break-word; /* Permite que las palabras largas se dividan si es necesario */
+    hyphens: auto; /* Permite que las palabras largas se dividan con un guion */
 }
+
 
 a.button {
     background-color: #69aaff;
