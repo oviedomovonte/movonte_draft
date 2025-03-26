@@ -13,7 +13,7 @@ body {
     background-color: #0474ef;
     color: #fff;
     text-align: left;
-    padding: 10px 5px; /* Ajuste del padding para que todo se ajuste */
+    padding: 10px 8px; /* Ajuste del padding para que todo se ajuste */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ body {
 
 .language-selector {
     display: flex;
-    gap: 2px; /* Ajuste del espacio entre elementos */
+    gap: 4px; /* Ajuste del espacio entre elementos */
 }
 
 .language-select {
@@ -45,7 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5px; /* Ajuste del padding para que todo se ajuste */
+    padding: 10px 8px; /* Ajuste del padding para que todo se ajuste */
 }
 
 .menu .logo {
@@ -260,11 +260,11 @@ footer {
         width: 100%;
         top: 0;
         z-index: 1000;
-        padding: 10px 5px; /* Ajuste del padding para que todo se ajuste */
+        padding: 10px 8px; /* Ajuste del padding para que todo se ajuste */
     }
 
     .language-selector {
-        gap: 2px; /* Ajuste del espacio entre elementos */
+        gap: 4px; /* Ajuste del espacio entre elementos */
     }
 
     .menu {
@@ -272,7 +272,7 @@ footer {
         width: 100%;
         top: 50px; /* Debajo de la cintilla superior */
         z-index: 999;
-        padding: 10px 5px; /* Ajuste del padding para que todo se ajuste */
+        padding: 10px 8px; /* Ajuste del padding para que todo se ajuste */
     }
 
     .hamburger {
@@ -334,4 +334,56 @@ footer {
     body {
         overflow-x: hidden; /* Prevenir desplazamiento horizontal */
     }
+}
+
+/* Asegurar que el contenido de la página se mida correctamente */
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+/* Ajuste de la cintilla para evitar que los elementos se corten */
+.cintilla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px; /* Aumentar padding lateral */
+    box-sizing: border-box;
+}
+
+/* Ajuste del menú para evitar que el botón hamburguesa se salga */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px; /* Asegurar que todo se mantenga dentro de la pantalla */
+    box-sizing: border-box;
+}
+
+/* Asegurar que el selector de idioma no se salga */
+.language-selector {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se acomoden si no caben */
+    justify-content: flex-end; /* Que no se empujen fuera del contenedor */
+    max-width: 100%;
+}
+
+/* Ajuste del menú hamburguesa */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+}
+
+/* Evitar que el menú hamburguesa se salga */
+.hamburger span {
+    background-color: #fff;
+    height: 2px;
+    width: 25px;
+    margin: 4px 0;
 }
