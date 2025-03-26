@@ -97,6 +97,14 @@ body {
     padding: 50px 20px;
 }
 
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
 .about-us-text {
     flex: 1;
     padding-right: 20px;
@@ -109,8 +117,9 @@ body {
 }
 
 .about-us-image img {
-    width: 50%;
+    width: 80%;
     height: auto; /* Mantiene la relación de aspecto */
+    max-width: 500px; /* Limitar el tamaño máximo */
 }
 
 /* Sección Our Code */
@@ -314,5 +323,39 @@ footer {
         text-align: justify;
         text-align-last: left;
         hyphens: auto;
+    }
+}
+
+/* Ajuste de la sección About Us en desktop */
+@media (min-width: 769px) {
+    .about-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .about-us-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .about-us-text {
+        flex: 1;
+        text-align: left;
+        padding-right: 40px;
+    }
+
+    .about-us-image {
+        flex: 1;
+        text-align: right;
+    }
+
+    .about-us-image img {
+        width: 80%; /* Ajustar tamaño de la imagen */
+        max-width: 500px; /* Limitar el tamaño máximo */
     }
 }
