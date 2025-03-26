@@ -107,13 +107,12 @@ body {
 }
 
 .about-us-image {
-    background-color: #333;
     text-align: center;
     order: 1;
 }
 
 .about-us-image img {
-    width: 100%;
+    width: 40%;
     height: auto;
 }
 
@@ -124,7 +123,7 @@ body {
 .about-us-text p {
     order: 4;
     hyphens: auto;
-    text-align-last: right;
+    text-align-last: left;
 }
 
 /* Sección Our Code */
@@ -157,6 +156,12 @@ body {
 
 .card:hover {
     transform: scale(1.05);
+}
+
+.justify-text {
+    text-align: justify;
+    text-align-last: left; /* Justificado a la izquierda */
+    hyphens: auto; /* Habilitar corte de palabras */
 }
 
 .button {
@@ -301,7 +306,7 @@ footer {
     }
 
     .about-us-image img {
-        width: 100%;
+        width: 40%; /* Ajuste al 40% del tamaño */
     }
 
     .cards-container {
@@ -314,7 +319,7 @@ footer {
 
     .centered-justified-text {
         text-align: justify;
-        text-align-last: right;
+        text-align-last: left;
         hyphens: auto;
     }
 }
