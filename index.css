@@ -82,7 +82,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
-    font-size: 1.1rem; /* Aumentado el tamaño de la letra */
+    font-size: 1.2rem; /* Aumentado el tamaño de la letra */
 }
 
 .menu .menu-items .button:hover {
@@ -157,7 +157,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
-    font-size: 1.1rem; /* Aumentado el tamaño de la letra */
+    font-size: 1.3rem; /* Aumentado el tamaño de la letra */
     margin-top: 20px;
 }
 
@@ -420,7 +420,7 @@ html, body {
 h1 {
     font-size: 4rem;
     color: #69aaff;
-    margin-bottom: 10px;
+    margin-bottom: -5px;
     white-space: nowrap; /* Para evitar que el título se divida en varias líneas */
 }
 
@@ -444,8 +444,8 @@ a.button {
     color: #fff;
     padding: 10px 25px; /* Incrementado el padding */
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem; /* Aumentado el tamaño de la letra */
+    border-radius: 20px;
+    font-size: 1.5rem; /* Aumentado el tamaño de la letra */
     text-align: left; /* Justificado a la izquierda */
     display: inline-block;
     margin: 20px 0; /* Marg
