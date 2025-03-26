@@ -132,14 +132,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     flex: 1;
-    margin: 0 0px;
+    margin: 0 10px;
 }
 
 .card img {
     width: 66%;
     height: auto;
-    border-radius: 10px 10px 10px 10px;
-    padding-top: 0px;
+    border-radius: 10px 10px 0 0;
+    padding-top: 45px;
 }
 
 .card:hover {
