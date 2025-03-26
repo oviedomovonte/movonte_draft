@@ -471,3 +471,12 @@ html, body {
         align-items: center;
     }
 }
+@media (max-width: 768px) {
+    .about-us-text {
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+
+    .about-us-text h2, .about-us-text h1 {
+        margin-left: 0; /* Elimina cualquier margen que esté desplazando el texto */
+    }
+}
