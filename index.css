@@ -67,20 +67,22 @@ body {
     color: #fff;
     margin-right: 20px;
     text-decoration: none;
-    margin-top: 3mm; /* Añadir margen superior para bajar los enlaces */
+    display: flex;
+    align-items: center; /* Alineación vertical */
 }
 
 /* Botón "Schedule a Consultation" */
 .menu .menu-items .button {
     background-color: #69aaff;
     color: #fff;
-    padding: 5px 20px; /* Reducido el padding vertical */
+    padding: 10px 25px; /* Incrementado el padding */
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
+    font-size: 1.1rem; /* Aumentado el tamaño de la letra */
 }
 
 .menu .menu-items .button:hover {
@@ -148,13 +150,14 @@ body {
 .button {
     background-color: #69aaff;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 25px; /* Incrementado el padding */
+    border-radius: 20px; /* Botón redondeado */
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
+    font-size: 1.1rem; /* Aumentado el tamaño de la letra */
     margin-top: 20px;
 }
 
@@ -176,6 +179,7 @@ body {
     text-align-last: center;
     max-width: 800px;
     margin: 0 auto 20px auto;
+    font-size: 1.5em; /* Aumento del tamaño de letra */
 }
 
 /* Redes Sociales */
@@ -371,7 +375,7 @@ html, body {
 }
 
 .hamburger {
-    display: flex;
+    display: none; /* Oculto en versión escritorio */
     flex-direction: column;
     cursor: pointer;
     position: relative;
@@ -417,6 +421,7 @@ h1 {
     font-size: 4rem;
     color: #69aaff;
     margin-bottom: 10px;
+    white-space: nowrap; /* Para evitar que el título se divida en varias líneas */
 }
 
 h2 {
@@ -424,12 +429,13 @@ h2 {
     color: #fff;
     font-weight: normal;
     margin-bottom: 20px;
+    max-width: 100%; /* Abarca el mismo ancho que el título */
 }
 
 p {
     color: #fff;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Aumento del tamaño de letra */
     margin: 0 auto 20px auto;
     max-width: 800px;
 }
@@ -437,32 +443,6 @@ p {
 a.button {
     background-color: #69aaff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 25px; /* Incrementado el padding */
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-align: center;
-    display: inline-block;
-    margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    .text-container, .content-container {
-        width: 100%;
-        padding-left: 0;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    a.button {
-        font-size: 0.9rem;
+    border
