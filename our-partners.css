@@ -46,10 +46,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    position: relative;
 }
 
 .menu .logo {
@@ -98,33 +95,17 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 50px 20px;
-    flex-direction: column;
 }
 
 .about-us-text {
+    flex: 1;
     padding-right: 20px;
-    order: 2;
 }
 
 .about-us-image {
+    flex: 1;
     background-color: #333;
-    text-align: center;
-    order: 1;
-}
-
-.about-us-image img {
-    width: 100%;
-    height: auto;
-}
-
-.about-us-text h1 {
-    order: 3;
-}
-
-.about-us-text p {
-    order: 4;
-    hyphens: auto;
-    text-align-last: right;
+    /* Espacio para la imagen futura */
 }
 
 /* Sección Our Code */
@@ -136,7 +117,7 @@ body {
 
 .cards-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     margin: 20px 0;
 }
 
@@ -146,13 +127,15 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
-    margin-bottom: 20px;
+    flex: 1;
+    margin: 0 10px;
 }
 
 .card img {
-    width: 100%;
+    width: 66%;
     height: auto;
     border-radius: 10px 10px 0 0;
+  padding-top: 45px;
 }
 
 .card:hover {
@@ -291,30 +274,57 @@ footer {
         display: flex;
     }
 
-    .about-section {
-        flex-direction: column;
+    .contenido-portada {
+        top: 70%;
+        left: 5%;
+        transform: translateY(-50%);
     }
 
-    .about-us-text {
-        padding-right: 0;
-        padding-top: 20px;
+    .contenido-portada h1 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        margin-top: 30px;
     }
 
-    .about-us-image img {
-        width: 100%;
+    .contenido-portada p {
+        font-size: 1em;
+        margin-top: 20px; 
     }
 
-    .cards-container {
-        flex-direction: column;
+    .contenido-portada .button {
+        padding: 8px 16px;
+        font-size: 0.8em;
+        margin-top: -10px; 
     }
 
-    .card {
-        margin-bottom: 20px;
+    .content {
+        margin-top: 100px;
     }
 
-    .centered-justified-text {
-        text-align: justify;
-        text-align-last: right;
-        hyphens: auto;
+    .imagen-espacio img {
+        width: 75%; 
     }
+}
+
+/* Hover para SVG */
+.contact-icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+  transform: scale(1.1); /* Crece un 10% */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.about-us-image {
+    /* Fondo transparente por defecto */
+    background-color: transparent; 
+    text-align: center; /* Centra la imagen dentro del div */
+}
+
+.about-us-image img {
+    /* Reducción al 50% del tamaño original */
+    width: 50%;
+    height: auto; /* Mantiene la relación de aspecto */
+}
+/* Hover específico para el primer ícono (LinkedIn) */
+.contact a:nth-of-type(1):hover img {
+  transform: scale(0.769); /* Crece un 3% adicional */
 }
