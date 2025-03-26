@@ -13,7 +13,7 @@ body {
     background-color: #0474ef;
     color: #fff;
     text-align: left;
-    padding: 10px 20px;
+    padding: 10px 8px; /* Ajuste del padding para que todo se ajuste */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,14 +21,14 @@ body {
 
 .language-selector {
     display: flex;
-    gap: 10px;
+    gap: 4px; /* Ajuste del espacio entre elementos */
 }
 
 .language-select {
     background-color: #000;
     color: #69aaff; /* Azul corporativo */
     border: 1px solid #69aaff;
-    padding: 3.75px; /* Reducido en un 25% */
+    padding: 2.75px; /* Reducido en un 25% */
     font-size: 0.75em;
     cursor: pointer;
     border-radius: 5px;
@@ -45,8 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    position: relative;
+    padding: 10px 8px; /* Ajuste del padding para que todo se ajuste */
 }
 
 .menu .logo {
@@ -104,8 +103,13 @@ body {
 
 .about-us-image {
     flex: 1;
-    background-color: #333;
-    /* Espacio para la imagen futura */
+    text-align: center;
+    background-color: transparent; /* Fondo transparente */
+}
+
+.about-us-image img {
+    width: 50%; /* Reducción al 50% del tamaño original */
+    height: auto; /* Mantiene la relación de aspecto */
 }
 
 /* Sección Our Code */
@@ -132,10 +136,10 @@ body {
 }
 
 .card img {
-    width: 100%;
+    width: 66%;
     height: auto;
-    border-radius: 15px 15px 15px 15px;
-  padding-top: 0px;
+    border-radius: 10px 10px 0 0;
+    padding-top: 0px;
 }
 
 .card:hover {
@@ -217,9 +221,9 @@ body {
 
 /* Hover para SVG */
 .contact-icons a:hover img {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(338deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
-  transform: scale(1.1); /* Crece un 10% */
-  transition: filter 0.3s ease, transform 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(338deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+    transform: scale(1.1); /* Crece un 10% */
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 /* Cintilla footer */
@@ -249,7 +253,32 @@ footer {
     width: 25px;
 }
 
+/* Estilos específicos para dispositivos móviles */
 @media (max-width: 768px) {
+    .cintilla {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        padding: 10px 8px; /* Ajuste del padding para que todo se ajuste */
+    }
+
+    .language-selector {
+        gap: 4px; /* Ajuste del espacio entre elementos */
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        top: 50px; /* Debajo de la cintilla superior */
+        z-index: 999;
+        padding: 10px 8px; /* Ajuste del padding para que todo se ajuste */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
     .menu .menu-items {
         display: none;
         flex-direction: column;
@@ -270,86 +299,145 @@ footer {
         display: flex;
     }
 
-    .hamburger {
-        display: flex;
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px; /* Espacio para la cintilla y el menú */
     }
 
-    .contenido-portada {
-        top: 70%;
-        left: 5%;
-        transform: translateY(-50%);
+    .about-us-text {
+        padding-right: 0;
+        text-align: right; /* Justificado a la derecha */
+        hyphens: auto; /* Habilitar guiones automáticos */
     }
 
-    .contenido-portada h1 {
-        font-size: 1.5em;
-        margin-bottom: 5px;
-        margin-top: 30px;
+    .about-us-image {
+        margin-top: 20px;
+        text-align: center; /* Centra la imagen */
     }
 
-    .contenido-portada p {
-        font-size: 1em;
-        margin-top: 20px; 
+    .about-us-image img {
+        width: 50%; /* Ajusta la imagen al tamaño de la pantalla */
     }
 
-    .contenido-portada .button {
-        padding: 8px 16px;
-        font-size: 0.8em;
-        margin-top: -10px; 
+    .our-code-section .cards-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .content {
-        margin-top: 100px;
+    .card {
+        margin: 10px 0;
+        text-align: center; /* Justificado a la derecha */
+        hyphens: auto; /* Habilitar guiones automáticos */
     }
 
-    .imagen-espacio img {
-        width: 75%; 
+    body {
+        overflow-x: hidden; /* Prevenir desplazamiento horizontal */
     }
 }
 
-/* Hover para SVG */
-.contact-icons a:hover img {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
-  transform: scale(1.1); /* Crece un 10% */
-  transition: filter 0.3s ease, transform 0.3s ease;
+/* Asegurar que el contenido de la página se mida correctamente */
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
 }
 
-.about-us-image {
-    /* Fondo transparente por defecto */
-    background-color: transparent; 
-    text-align: center; /* Centra la imagen dentro del div */
+/* Ajuste de la cintilla para evitar que los elementos se corten */
+.cintilla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px; /* Aumentar padding lateral */
+    box-sizing: border-box;
 }
 
-.about-us-image img {
-    /* Reducción al 50% del tamaño original */
-    width: 50%;
-    height: auto; /* Mantiene la relación de aspecto */
-}
-/* Hover específico para el primer ícono (LinkedIn) */
-.contact a:nth-of-type(1):hover img {
-  transform: scale(0.769); /* Crece un 3% adicional */
-}
-
-.card img {
-    width: 100%; /* Aumentar el tamaño de la imagen un 15% */
-    height: auto;
-    border-radius: 15px; /* Bordes redondeados */
-    opacity: 0.3; /* Opacidad al 50% en estado normal */
-    transition: opacity 0.3s ease; /* Transición suave cuando cambia la opacidad */
+/* Ajuste del menú para evitar que el botón hamburguesa se salga */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px; /* Asegurar que todo se mantenga dentro de la pantalla */
+    box-sizing: border-box;
 }
 
-/* Efecto de hover */
-.card:hover img {
-    opacity: 1; /* Opacidad al 100% cuando se hace hover */
+/* Asegurar que el selector de idioma no se salga */
+.language-selector {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se acomoden si no caben */
+    justify-content: flex-end; /* Que no se empujen fuera del contenedor */
+    max-width: 100%;
 }
-/* Para dispositivos móviles, se mantiene la opacidad al 100% */
+
+/* Ajuste del menú hamburguesa */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+}
+
+/* Evitar que el menú hamburguesa se salga */
+.hamburger span {
+    background-color: #fff;
+    height: 2px;
+    width: 25px;
+    margin: 4px 0;
+}
 @media (max-width: 768px) {
-    .card img {
-        opacity: 1; /* En móvil, siempre opacidad 100% */
+    /* Ajustar tamaño del título About Us */
+    .about-us-text h2 {
+        font-size: 2.2em; /* Aumentar el tamaño del título */
+        font-weight: bold;
     }
 
-    /* El hover no afecta en móviles */
-    .card:hover img {
-        opacity: 1; /* Asegurar que en móvil siempre se mantenga al 100% */
+    /* Alinear el título y subtítulo a la izquierda */
+    .about-us-text {
+        text-align: left; /* Alinear texto a la izquierda */
+        padding-left: 10px; /* Dar un poco de margen izquierdo */
+    }
+
+    /* Ajustar margen para el subtítulo */
+    .about-us-text p {
+        text-align: left; /* También alinearlo a la izquierda */
+        margin-left: 10px;
+    }
+}
+@media (max-width: 768px) {
+    /* Ajustar tamaño del título About Us */
+    .about-us-text h2 {
+        font-size: 2.2em; /* Aumentar tamaño */
+        font-weight: bold;
+        margin-bottom: 5px; /* Reducir espacio debajo del título */
+    }
+
+    /* Alinear el texto y reducir separación con el subtítulo */
+    .about-us-text {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    /* Ajustar margen superior del subtítulo */
+    .about-us-text p {
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 0; /* Eliminar espacio superior */
+    }
+}
+@media (min-width: 768px) {
+    /* Hacer el título más grande en desktop */
+    .about-us-text h2 {
+        font-size: 3em; /* Agrandar título en versión escritorio */
+        font-weight: bold;
+        margin-bottom: 10px; /* Mantener espaciado balanceado */
+    }
+}
+@media (min-width: 768px) {
+    .hamburger {
+        display: none !important; /* Ocultar menú hamburguesa en desktop */
     }
 }
 
@@ -373,4 +461,20 @@ footer {
 .card p {
     margin-top: 0; /* Eliminar margen superior */
     margin-bottom: 0; /* Eliminar margen inferior */
+}
+/* Efecto de hover */
+.card:hover img {
+    opacity: 1; /* Opacidad al 100% cuando se hace hover */
+}
+
+/* Para dispositivos móviles, se mantiene la opacidad al 100% */
+@media (max-width: 768px) {
+    .card img {
+        opacity: 1; /* En móvil, siempre opacidad 100% */
+    }
+
+    /* El hover no afecta en móviles */
+    .card:hover img {
+        opacity: 1; /* Asegurar que en móvil siempre se mantenga al 100% */
+    }
 }
