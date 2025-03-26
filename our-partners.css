@@ -132,10 +132,10 @@ body {
 }
 
 .card img {
-    width: 66%;
+    width: 100%;
     height: auto;
-    border-radius: 10px 10px 0 0;
-  padding-top: 45px;
+    border-radius: 15px 15px 15px 15px;
+  padding-top: 0px;
 }
 
 .card:hover {
@@ -327,4 +327,17 @@ footer {
 /* Hover específico para el primer ícono (LinkedIn) */
 .contact a:nth-of-type(1):hover img {
   transform: scale(0.769); /* Crece un 3% adicional */
+}
+
+.card img {
+    width: 100%; /* Aumentar el tamaño de la imagen un 15% */
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados */
+    opacity: 0.5; /* Opacidad al 50% en estado normal */
+    transition: opacity 0.3s ease; /* Transición suave cuando cambia la opacidad */
+}
+
+/* Efecto de hover */
+.card:hover img {
+    opacity: 1; /* Opacidad al 100% cuando se hace hover */
 }
