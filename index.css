@@ -429,7 +429,7 @@ h2 {
     color: #fff;
     font-weight: normal;
     margin-bottom: 20px;
-    display: inline; /* Asegura que el h2 se comporte como un bloque alineado al h1 */
+    display: flex; /* Asegura que el h2 se comporte como un bloque alineado al h1 */
     width: 100%; /* Ocupa todo el ancho disponible */
 }
 
