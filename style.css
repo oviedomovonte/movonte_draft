@@ -404,3 +404,35 @@ footer {
 .contact a:nth-of-type(1):hover img {
   transform: scale(0.769); /* Crece un 3% adicional */
 }
+
+/* Hover para SVG */
+.contact-icons a:hover img {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+    transform: scale(1.1); /* Crece un 10% */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Ajuste de los íconos */
+.contact a img {
+    width: 30px;  /* Tamaño uniforme */
+    height: 30px;
+    object-fit: contain;
+    display: block;
+    vertical-align: middle;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(747%) hue-rotate(180deg) brightness(106%) contrast(101%); /* Color inicial */
+}
+
+/* Ajuste para el primer ícono (LinkedIn) */
+.contact a:nth-of-type(1) img {
+    width: 28px;
+    height: 28px;
+    transform: scale(0.739); /* Reduce el tamaño al 73.9% */
+}
+
+/* Ajuste para el segundo ícono (Instagram) */
+.contact a:nth-of-type(2) img {
+    width: 28px;
+    height: 28px;
+    transform: scale(0.97); /* 25% más pequeño */
+}
