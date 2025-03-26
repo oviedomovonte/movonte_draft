@@ -333,11 +333,44 @@ footer {
     width: 100%; /* Aumentar el tamaño de la imagen un 15% */
     height: auto;
     border-radius: 15px; /* Bordes redondeados */
-    opacity: 0.5; /* Opacidad al 50% en estado normal */
+    opacity: 0.3; /* Opacidad al 50% en estado normal */
     transition: opacity 0.3s ease; /* Transición suave cuando cambia la opacidad */
 }
 
 /* Efecto de hover */
 .card:hover img {
     opacity: 1; /* Opacidad al 100% cuando se hace hover */
+}
+/* Para dispositivos móviles, se mantiene la opacidad al 100% */
+@media (max-width: 768px) {
+    .card img {
+        opacity: 1; /* En móvil, siempre opacidad 100% */
+    }
+
+    /* El hover no afecta en móviles */
+    .card:hover img {
+        opacity: 1; /* Asegurar que en móvil siempre se mantenga al 100% */
+    }
+}
+
+/* Reducir el espacio entre la imagen y el título */
+.card img {
+    width: 100%; /* Imagen al 100% de su contenedor */
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Reducir el espacio debajo de la imagen */
+    opacity: 0.3; /* Opacidad al 50% en estado normal */
+    transition: opacity 0.3s ease; /* Transición suave cuando cambia la opacidad */
+}
+
+/* Reducir el espacio entre el título y el párrafo */
+.card h3 { /* Asegúrate de que el título tenga una clase h3 o ajusta según tu HTML */
+    margin-top: 0; /* Eliminar margen superior */
+    margin-bottom: 5px; /* Reducir el espacio inferior entre el título y el párrafo */
+}
+
+/* Ajustar el margen en el párrafo */
+.card p {
+    margin-top: 0; /* Eliminar margen superior */
+    margin-bottom: 0; /* Eliminar margen inferior */
 }
