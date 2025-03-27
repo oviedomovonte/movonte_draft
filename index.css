@@ -568,9 +568,11 @@ h2, .rating {
     font-size: 1rem;
     color: #b0b0b0; /* Color gris claro para diferenciar la ubicación */
 }
-
 .marquee {
-  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  width: calc(100vw - 3cm); /* Ocupa todo el ancho de la pantalla menos 3cm para el margen */
+  margin: 0 1.5cm; /* Agrega un margen de 1.5cm a ambos lados */
+  margin-left: calc(1.5cm - 0.75cm); /* Ajusta el margen izquierdo para mover la marquesina 0.75cm a la izquierda */
+  margin-right: calc(1.5cm + 0.75cm); /* Ajusta el margen derecho para mantener el balance */
   overflow: hidden;
   background: black; /* Fondo opcional */
   padding: 10px 0;
@@ -580,7 +582,7 @@ h2, .rating {
 .marquee-content {
   display: flex;
   gap: 50px; /* Espacio entre logos */
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
   width: calc(200% + 50px); /* Ajusta el ancho al doble del viewport */
 }
 
@@ -599,6 +601,7 @@ h2, .rating {
     transform: translateX(-50%);
   }
 }
+
 .logo-carousel {
   display: flex;
   overflow: hidden;
@@ -608,7 +611,7 @@ h2, .rating {
 
 .logo-slide {
   display: flex;
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
@@ -623,4 +626,10 @@ h2, .rating {
 .logo-slide img {
   width: 100px; /* Ajusta el tamaño de los logos */
   margin: 0 10px; /* Espaciado entre logos */
+}
+.mastery-section p.center-justify {
+  text-align: justify; /* Justifica el texto */
+  margin-left: auto; /* Centra el bloque de texto horizontalmente */
+  margin-right: auto; /* Centra el bloque de texto horizontalmente */
+  max-width: 800px; /* Ancho máximo para un mejor control del centrado */
 }
