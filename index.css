@@ -568,3 +568,59 @@ h2, .rating {
     font-size: 1rem;
     color: #b0b0b0; /* Color gris claro para diferenciar la ubicación */
 }
+
+.marquee {
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  overflow: hidden;
+  background: black; /* Fondo opcional */
+  padding: 10px 0;
+  white-space: nowrap; /* Evita que el contenido salte de línea */
+}
+
+.marquee-content {
+  display: flex;
+  gap: 50px; /* Espacio entre logos */
+  animation: marquee 10s linear infinite;
+  width: calc(200% + 50px); /* Ajusta el ancho al doble del viewport */
+}
+
+.marquee-content img {
+  width: 150px; /* Ajusta el tamaño según necesites */
+  height: auto;
+  display: inline-block;
+}
+
+/* Animación */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.logo-carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-slide {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logo-slide img {
+  width: 100px; /* Ajusta el tamaño de los logos */
+  margin: 0 10px; /* Espaciado entre logos */
+}
