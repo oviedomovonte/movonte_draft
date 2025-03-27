@@ -344,7 +344,7 @@ footer {
 }
 
 .contenido-portada h1 {
-    font-size: 8em;
+    font-size: 3em;
     margin-bottom: 0; /* Reducir el espacio entre el título y subtítulo */
     line-height: 1.2;
 }
@@ -370,4 +370,7 @@ footer {
 
 .contenido-portada .button:hover {
     transform: scale(1.1);
+}
+.h2-small {
+  font-size: 1.75rem; /* Reduce el tamaño */
 }
