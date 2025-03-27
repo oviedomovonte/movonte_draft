@@ -630,3 +630,4 @@ a.button {
     transform: scale(1.1); /* Crece un 10% */
     transition: filter 0.3s ease, transform 0.3s ease;
 }
+
