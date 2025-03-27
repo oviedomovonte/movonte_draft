@@ -116,7 +116,7 @@ body {
 
 /* Sección Our Code */
 .our-code-section {
-    background-color: #0474ef;
+    background-color: #000;
     text-align: center;
     padding: 50px 20px;
 }
@@ -168,7 +168,7 @@ body {
 
 /* Sección Master Tech */
 .master-tech-section {
-    background-color: #222;
+    background-color: #000;
     text-align: center;
     padding: 50px 20px;
 }
@@ -317,317 +317,57 @@ footer {
         text-align: right;
         hyphens: auto;
     }
-
-    .about-us-image {
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .about-us-image img {
-        width: 50%;
-    }
-
-    .our-code-section .cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        margin: 10px 0;
-        text-align: center;
-        hyphens: auto;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
 }
 
-html, body {
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-.cintilla {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 12px;
-    box-sizing: border-box;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 12px;
-    box-sizing: border-box;
-}
-
-.language-selector {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    max-width: 100%;
-}
-
-.hamburger {
-    display: none; /* Oculto en versión escritorio */
-    flex-direction: column;
-    cursor: pointer;
+/* Portada */
+.portada {
     position: relative;
-    right: 0;
-}
-
-.hamburger span {
-    background-color: #fff;
-    height: 2px;
-    width: 25px;
-    margin: 4px 0;
-}
-
-/* Sección de bienvenida */
-.welcome-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.amovonte-text {
-    width: 100%;
-}
-
-.text-container {
-    width: 50%;
-    padding-left: 5%;
     text-align: left;
 }
 
-.content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.portada img {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
-h1 {
-    font-size: 4rem;
-    color: #69aaff;
-    margin-bottom: -5px;
-    white-space: nowrap; /* Para evitar que el título se divida en varias líneas */
-}
-
-h2 {
-    font-size: 2rem;
-    color: #fff;
-    font-weight: normal;
-    margin-bottom: 20px;
-    text-align: justify; /* Justifica el texto */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    hyphens: auto; /* Permite que las palabras largas se dividan con un guion */
-}
-
-p {
-    color: #fff;
-    text-align: justify; /* Justifica el texto */
-    font-size: 1.5rem; /* Aumento del tamaño de letra */
-    margin: 0 auto 20px auto;
-    max-width: 800px;
-    word-wrap: break-word; /* Permite que las palabras largas se dividan si es necesario */
-    hyphens: auto; /* Permite que las palabras largas se dividan con un guion */
-}
-
-
-a.button {
-    background-color: #69aaff;
-    color: #fff;
-    padding: 10px 25px; /* Incrementado el padding */
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 1.5rem; /* Aumentado el tamaño de la letra */
-    text-align: left; /* Justificado a la izquierda */
-    display: inline-block;
-    margin: 20px 0; /* Marg
-  
-  .card {
-    opacity: 0.77; /* Opacidad inicial del 77% */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
-}
-
-.card:hover {
-    opacity: 1; /* Opacidad al 100% cuando se hace hover */
-    transform: scale(1.05); /* Aumenta el tamaño un 5% */
-}
-.card {
-    opacity: 0.77; /* Opacidad inicial del 77% */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave para opacidad y transformación */
-}
-
-.card:hover {
-    opacity: 1; /* Opacidad al 100% cuando se hace hover */
-    transform: scale(1.05); /* Aumenta el tamaño un 5% */
-}
-.card h3 {
-    text-align: right; /* Alinea el texto a la derecha */
-}
-
-.rating {
-    font-size: 2rem; /* Ajusta el tamaño de las estrellas */
-    text-align: center; /* Centra el contenido */
-    margin: 20px 0; /* Espacio alrededor */
-}
-
-.reviews-container {
-    display: flex; /* Alinea las reseñas horizontalmente */
-    justify-content: space-between; /* Espacio uniforme entre ellas */
-    gap: 20px; /* Espaciado entre cada reseña */
-    padding: 20px;
-    max-width: 900px; /* Ajusta según el diseño */
-    margin: 0 auto; /* Centra el contenedor */
-}
-
-.review-card {
-    background-color: #000; /* Fondo oscuro */
-    color: #fff; /* Texto en blanco */
-    padding: 15px;
-    border-radius: 10px; /* Bordes redondeados */
-    text-align: center; /* Centrar el texto */
-    flex: 1; /* Permite que las cards se ajusten uniformemente */
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Sombra sutil */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0.77; /* Opacidad inicial */
-}
-
-.review-card:hover {
-    transform: scale(1.05); /* Efecto de agrandar al pasar el mouse */
-    opacity: 1; /* Opacidad al 100% en hover */
-}
-
-.review-text {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.review-author {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.review-location {
-    font-style: italic;
-    font-size: 1rem;
-    color: #b0b0b0; /* Color gris claro para diferenciar la ubicación */
-}
-
-/* Responsivo: Cambiar a formato vertical en móviles */
-@media (max-width: 768px) {
-    .reviews-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .review-card {
-        width: 80%;
-    }
-}
-.reviews-container {
-    display: flex; /* Alinea las reseñas horizontalmente */
-    justify-content: space-between; /* Espacio uniforme entre ellas */
-    gap: 20px; /* Espaciado entre cada reseña */
-    padding: 20px;
-    max-width: 900px; /* Ajusta según el diseño */
-    margin: 0 auto; /* Centra el contenedor */
-}
-
-.review-card {
-    background-color: #000; /* Fondo oscuro */
-    color: #fff; /* Texto en blanco */
-    padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    text-align: center; /* Centrar el texto */
-    flex: 1; /* Permite que las cards se ajusten uniformemente */
-    box-shadow: 0 8px 12px rgba(255, 255, 255, 0.15); /* Sombra clara más notoria en la parte superior e inferior */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0.77; /* Opacidad inicial */
+.contenido-portada {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuye el contenido dejando el footer abajo */
-    min-height: 200px; /* Asegura que todas las cards tengan al menos la misma altura */
+    align-items: flex-start;
 }
 
-.review-card:hover {
-    transform: scale(1.05); /* Efecto de agrandar al pasar el mouse */
-    opacity: 1; /* Opacidad al 100% en hover */
+.contenido-portada h1 {
+    font-size: 8em;
+    margin-bottom: 0; /* Reducir el espacio entre el título y subtítulo */
+    line-height: 1.2;
 }
 
-.review-text {
-    font-size: 1.2rem;
-    flex-grow: 1; /* Hace que el texto ocupe todo el espacio disponible antes del footer */
-    margin-bottom: 20px;
+.contenido-portada p {
+    font-size: 1.5em;
+    margin-top: 0; /* Reducir el espacio entre el título y el subtítulo */
+    margin-bottom: 0; /* Espacio entre el subtítulo y el botón */
 }
 
-.review-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea sutil separando la reseña del autor */
-    padding-top: 10px;
+.contenido-portada .button {
+    background-color: #fc5e51;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 0; /* Espacio entre el subtítulo y el botón */
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
 }
 
-.review-author {
-    font-weight: bold;
-    margin: 5px 0 0 0; /* Espaciado superior reducido */
+.contenido-portada .button:hover {
+    transform: scale(1.1);
 }
-
-.review-location {
-    font-style: italic;
-    font-size: 1rem;
-    color: #b0b0b0; /* Color gris claro para diferenciar la ubicación */
-}
-
-/* Responsivo: Cambiar a formato vertical en móviles */
-@media (max-width: 768px) {
-    .reviews-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .review-card {
-        width: 80%;
-    }
-}
-.button-container {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-}
-
-/* Ajuste para el primer ícono (LinkedIn) */
-.contact a:nth-of-type(1) img {
-    width: 28px; /* Se redujo un poco el primer ícono */
-    height: 28px;
-    transform: scale(0.739); /* Reduce el tamaño al 73.9% */
-}
-
-/* Hover para SVG */
-.contact-icons a:hover img {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
-  transform: scale(1.1); /* Crece un 10% */
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover específico para el primer ícono (LinkedIn) */
-.contact a:nth-of-type(1):hover img {
-  transform: scale(0.769); /* Crece un 3% adicional */
-}
-
-/* Hover para SVG */
-.contact-icons a:hover img {
-    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
-    transform: scale(1.1); /* Crece un 10% */
-    transition: filter 0.3s ease, transform 0.3s ease;
-}
-
