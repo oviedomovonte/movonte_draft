@@ -504,3 +504,67 @@ h2, .rating {
 .homepage-title {
     text-align: left; /* Alinea a la izquierda */
 }
+
+/* Responsivo: Cambiar a formato vertical en móviles */
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 80%;
+    }
+}
+
+.reviews-container {
+    display: flex; /* Alinea las reseñas horizontalmente */
+    justify-content: space-between; /* Espacio uniforme entre ellas */
+    gap: 20px; /* Espaciado entre cada reseña */
+    padding: 20px;
+    max-width: 900px; /* Ajusta según el diseño */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.review-card {
+    background-color: #000; /* Fondo oscuro */
+    color: #fff; /* Texto en blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    flex: 1; /* Permite que las cards se ajusten uniformemente */
+    box-shadow: 0 8px 12px rgba(255, 255, 255, 0.15); /* Sombra clara más notoria en la parte superior e inferior */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.77; /* Opacidad inicial */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido dejando el footer abajo */
+    min-height: 200px; /* Asegura que todas las cards tengan al menos la misma altura */
+}
+
+.review-card:hover {
+    transform: scale(1.05); /* Efecto de agrandar al pasar el mouse */
+    opacity: 1; /* Opacidad al 100% en hover */
+}
+
+.review-text {
+    font-size: 1.2rem;
+    flex-grow: 1; /* Hace que el texto ocupe todo el espacio disponible antes del footer */
+    margin-bottom: 20px;
+}
+
+.review-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea sutil separando la reseña del autor */
+    padding-top: 10px;
+}
+
+.review-author {
+    font-weight: bold;
+    margin: 5px 0 0 0; /* Espaciado superior reducido */
+}
+
+.review-location {
+    font-style: italic;
+    font-size: 1rem;
+    color: #b0b0b0; /* Color gris claro para diferenciar la ubicación */
+}
