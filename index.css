@@ -633,3 +633,65 @@ h2, .rating {
   margin-right: auto; /* Centra el bloque de texto horizontalmente */
   max-width: 800px; /* Ancho máximo para un mejor control del centrado */
 }
+.mastery-section p.center-justify {
+  text-align: justify; /* Justifica el texto */
+  margin-left: auto; /* Centra el bloque de texto horizontalmente */
+  margin-right: auto; /* Centra el bloque de texto horizontalmente */
+  max-width: 800px; /* Ancho máximo para un mejor control del centrado */
+}
+
+.button-container {
+  text-align: center; /* Centra el contenido dentro de la contenedor del botón */
+  margin-top: 20px; /* Espaciado superior opcional */
+}
+
+.button-container .button {
+  background-color: #69aaff;
+  color: #fff;
+  padding: 10px 25px; /* Incrementado el padding */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.3rem; /* Aumentado el tamaño de la letra */
+  margin-top: 20px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #fc5e51;
+}
+
+
+/* Ajuste para el primer ícono (LinkedIn) */
+.contact a:nth-of-type(1) img {
+    width: 28px; /* Se redujo un poco el primer ícono */
+    height: 28px;
+    transform: scale(0.739); /* Reduce el tamaño al 73.9% */
+}
+
+/* Ajuste para el segundo ícono (Instagram) */
+.contact a:nth-of-type(2) img {
+    width: 28px;
+    height: 28px;
+    transform: scale(0.97); /* 25% más pequeño */
+}
+
+/* Hover para SVG */
+.contact-icons a:hover img {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+    transform: scale(1.1); /* Crece un 10% */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}/* Hover para SVG */
+.contact-icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
+  transform: scale(1.1); /* Crece un 10% */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover específico para el primer ícono (LinkedIn) */
+.contact a:nth-of-type(1):hover img {
+  transform: scale(0.769); /* Crece un 3% adicional */
+}
