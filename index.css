@@ -495,3 +495,12 @@ footer {
 .card p {
     text-align: center; /* Alinea el texto a la izquierda */
 }
+
+h2, .rating {
+    text-align: center;
+}
+
+/* Estilo para el H2 de la portada */
+.homepage-title {
+    text-align: left; /* Alinea a la izquierda */
+}
