@@ -334,7 +334,7 @@ footer {
 .contenido-portada {
     position: absolute;
     top: 40%;
-    left: 10%;
+    left: calc(10% - 2cm); /* Mueve el contenido 2 cm a la izquierda */
     transform: translateY(-50%);
     text-align: left;
     max-width: 90%;
@@ -349,8 +349,13 @@ footer {
     line-height: 1.2;
 }
 
+.contenido-portada h2,
+.contenido-portada h3 {
+    width: 80%; /* Ajusta el ancho al 80% del espacio actual */
+}
+
 .contenido-portada p {
-    font-size: 1.5em;
+    font-size: 1em;
     margin-top: 0; /* Reducir el espacio entre el título y el subtítulo */
     margin-bottom: 0; /* Espacio entre el subtítulo y el botón */
 }
@@ -370,7 +375,4 @@ footer {
 
 .contenido-portada .button:hover {
     transform: scale(1.1);
-}
-.h2-small {
-  font-size: 1.75rem; /* Reduce el tamaño */
 }
