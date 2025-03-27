@@ -151,7 +151,7 @@ body {
   background-color: #69aaff;
   color: #fff;
   padding: 10px 25px; /* Incrementado el padding */
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
   text-decoration: none;
@@ -490,4 +490,8 @@ footer {
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(105, 170, 255, 0.8); /* Sombra difuminada azul corporativo más intensa al hacer hover */
+}
+
+.card p {
+    text-align: center; /* Alinea el texto a la izquierda */
 }
