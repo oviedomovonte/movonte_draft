@@ -262,6 +262,59 @@ footer {
     width: 25px;
 }
 
+/* Portada */
+.portada {
+    position: relative;
+    text-align: left;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenido-portada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido-portada h1 {
+    font-size: 3em;
+    margin-bottom: 0; /* Reducir el espacio entre el título y subtítulo */
+    line-height: 1.2;
+}
+
+.contenido-portada p {
+    font-size: 1.1em;
+    margin-top: 0; /* Reducir el espacio entre el título y el subtítulo */
+    margin-bottom: 1em; /* Espacio entre el subtítulo y el botón */
+}
+
+.contenido-portada .button {
+    background-color: #fc5e51;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 1em; /* Espacio entre el subtítulo y el botón */
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.contenido-portada .button:hover {
+    transform: scale(1.1);
+}
+
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 768px) {
     body {
@@ -363,6 +416,30 @@ footer {
 
     .contact {
         padding: 10px 0; /* Ajuste del padding para que el texto sea visible */
+    }
+
+    .portada {
+        margin-top: 5cm; /* Baja todo el contenido 5 cm */
+    }
+
+    .contenido-portada {
+        position: static;
+        transform: none;
+        margin-top: 5cm;
+        padding: 0 20px;
+    }
+
+    .contenido-portada h1 {
+        font-size: 2em;
+    }
+
+    .contenido-portada p {
+        font-size: 1em;
+    }
+
+    .contenido-portada .button {
+        padding: 15px 30px;
+        font-size: 1.1em;
     }
 }
 
