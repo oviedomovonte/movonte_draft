@@ -17,6 +17,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .language-selector {
@@ -46,6 +50,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 8px; /* Ajuste del padding para que todo se ajuste */
+    position: fixed;
+    width: 100%;
+    top: 50px; /* Debajo de la cintilla superior */
+    z-index: 999;
 }
 
 .menu .logo {
@@ -94,6 +102,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 50px 20px;
+    margin-top: 110px; /* Ajustar para compensar la altura de la cintilla y el menú */
 }
 
 .about-us-text {
@@ -266,18 +275,19 @@ footer {
 .portada {
     position: relative;
     text-align: left;
-    margin-top: 50px; /* Eliminar el espacio negro */
+    margin-top: 110px; /* Ajustar para compensar la altura de la cintilla y el menú */
 }
 
 .portada img {
     width: 100%;
     height: auto;
     display: block;
+    margin-top: 3.2cm; /* Bajar la imagen de la portada 3.2 centímetros */
 }
 
 .contenido-portada {
     position: absolute;
-    top: calc(50% + 50px); /* Ajustar para eliminar el espacio negro */
+    top: 3cm; /* Subir todos los textos de la portada 3 centímetros */
     left: 0;
     width: 100%;
     padding: 0 20px;
@@ -286,7 +296,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 3cm; /* Subir todos los textos de la portada 3 centímetros */
 }
 
 .contenido-portada h1 {
@@ -613,12 +622,4 @@ html, body {
 
 /* Hover para SVG */
 .contact-icons a:hover img {
-    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
-    transform: scale(1.1); /* Crece un 10% */
-    transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-/* Menú hamburguesa para móviles */
-.hamburger {
-    display: none; /* No se muestra en escritorio */
-    flex-direction: column
+    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate
