@@ -536,7 +536,7 @@ footer {
     .contenido-portada h1 {
         font-size: 1.5em;
         margin-bottom: 5px;
-        margin-top: 30px;
+        margin-top: 311px;
     }
 
     .contenido-portada .homepage-title {
@@ -544,11 +544,12 @@ footer {
         line-height: 1.2; /* Reducir el espacio entre líneas */
         width: 100%; /* Asegurar que abarca todo el ancho de la pantalla móvil */
         margin-bottom: 1em; /* Espacio entre el subtítulo y el párrafo */
-    }
+    margin-top: 9px;
+  }
 
     .contenido-portada p {
         font-size: 1em;
-        margin-top: 20px;
+        margin-top: 1px;
     }
 
     .contenido-portada .button {
@@ -627,4 +628,13 @@ html, body {
     letter-spacing: 0.02em;
     text-align: center;
     margin-top: 4cm; /* Esto moverá el texto 4 cm hacia abajo */
+}
+#s3 .text-container {
+    margin-top: 4cm; /* Esto moverá el contenido 4 cm hacia abajo */
+}
+.contenido-portada {
+  margin-top: 4cm; /* Esto moverá todo el contenido hacia abajo */
+}
+.about-section {
+    margin-top: 150px; /* Ajustar dependiendo de la altura de la cintilla y el menú */
 }
