@@ -615,3 +615,31 @@ html, body {
     hyphens: auto; /* Habilitar guiones automáticos */
     word-wrap: break-word; /* Permitir cortes de palabras */
 }
+
+/* Sección Our Clients */
+.our-clients {
+    background-color: #000;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: .5cm; /* Bajar todo el contenido 3 centímetros más */
+}
+
+.our-clients h2 {
+    white-space: pre-line; /* Permitir saltos de línea */
+}
+
+.our-clients .centered-justified-text {
+    color: #fff;
+    text-align: justify;
+    text-align-last: center;
+    max-width: 800px;
+    margin:;
+    font-size: 1em; /* Reducir ligeramente el tamaño del texto */
+    padding: 0 20px; /* Añadir márgenes laterales */
+}
+
+.mastery-section .center-justify {
+    margin-left: 1cm;
+    margin-right: 1cm;
+    text-align: justify;
+}
