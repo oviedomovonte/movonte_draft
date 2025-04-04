@@ -126,7 +126,7 @@ body {
     background-color: #0474ef;
     text-align: center;
     padding: 50px 20px;
-    margin-top: 5.5cm; /* Aumentar el margen superior */
+    margin-top: 8.1cm; /* Aumentar el margen superior */
 }
 
 .cards-container {
@@ -316,7 +316,7 @@ footer {
     margin-top: 0; /* Reducir el espacio entre el título y el subtítulo */
     margin-bottom: 1em; /* Espacio entre el subtítulo y el botón */
     width: 100%; /* Asegurar que abarca todo el ancho de la pantalla */
-    line-height: 1.2; /* Reducir el espaciado entre líneas */
+    line-height: 1; /* Reducir el espaciado entre líneas */
 }
 
 .contenido-portada .button {
@@ -598,3 +598,20 @@ html, body {
 
 /* Asegurar que el selector de idioma no se salga */
 .language
+
+/* Sección Master Tech */
+.master-tech-section {
+    background-color: #000; /* Cambiar fondo a negro */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.centered-justified-text {
+    color: #fff;
+    text-align: justify;
+    text-align-last: center;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    hyphens: auto; /* Habilitar guiones automáticos */
+    word-wrap: break-word; /* Permitir cortes de palabras */
+}
