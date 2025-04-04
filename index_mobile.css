@@ -126,6 +126,7 @@ body {
     background-color: #0474ef;
     text-align: center;
     padding: 50px 20px;
+    margin-top: 5.5cm; /* Aumentar el margen superior */
 }
 
 .cards-container {
@@ -315,6 +316,7 @@ footer {
     margin-top: 0; /* Reducir el espacio entre el título y el subtítulo */
     margin-bottom: 1em; /* Espacio entre el subtítulo y el botón */
     width: 100%; /* Asegurar que abarca todo el ancho de la pantalla */
+    line-height: 1.2; /* Reducir el espaciado entre líneas */
 }
 
 .contenido-portada .button {
@@ -595,46 +597,4 @@ html, body {
 }
 
 /* Asegurar que el selector de idioma no se salga */
-.language-selector {
-    display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se acomoden si no caben */
-    justify-content: flex-end; /* Que no se empujen fuera del contenedor */
-    max-width: 100%;
-}
-
-/* Ajuste del menú hamburguesa */
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    position: relative;
-    right: 0;
-}
-
-/* Evitar que el menú hamburguesa se salga */
-.hamburger span {
-    background-color: #fff;
-    height: 2px;
-    width: 25px;
-    margin: 4px 0
-      
-      
-#s3 .text-container p {
-    font-family: Arial, sans-serif;
-    font-weight: normal;
-    color: #000;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin-top: 4cm; /* Esto moverá el texto 4 cm hacia abajo */
-}
-#s3 .text-container {
-    margin-top: 4cm; /* Esto moverá el contenido 4 cm hacia abajo */
-}
-.contenido-portada {
-  margin-top: 4cm; /* Esto moverá todo el contenido hacia abajo */
-}
-.about-section {
-    margin-top: 150px; /* Ajustar dependiendo de la altura de la cintilla y el menú */
-}
+.language
