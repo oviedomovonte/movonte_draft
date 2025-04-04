@@ -266,6 +266,7 @@ footer {
 .portada {
     position: relative;
     text-align: left;
+    margin-top: 50px; /* Eliminar el espacio negro */
 }
 
 .portada img {
@@ -281,10 +282,11 @@ footer {
     width: 100%;
     padding: 0 20px;
     text-align: left;
-    max-width: 90%;
+    max-width: 90%; /* Asegurar que ocupa todo el ancho de la pantalla */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 3cm; /* Subir todos los textos de la portada 3 centímetros */
 }
 
 .contenido-portada h1 {
@@ -297,6 +299,7 @@ footer {
     font-size: 1.1em;
     margin-top: 0; /* Reducir el espacio entre el título y el subtítulo */
     margin-bottom: 1em; /* Espacio entre el subtítulo y el botón */
+    width: 100%; /* Asegurar que abarca todo el ancho de la pantalla */
 }
 
 .contenido-portada .button {
@@ -312,13 +315,9 @@ footer {
     font-weight: 700;
 }
 
-.contenido-portada .button:hover {
-    transform: scale(1.1);
-}
-
 /* Sección Why Choose Movonte */
 .why-choose-movonte {
-    background-color: #000;
+    background-color: #000; /* Cambiar fondo a negro */
     padding: 50px 20px;
 }
 
@@ -326,6 +325,7 @@ footer {
     hyphens: auto;
     word-wrap: break-word;
     text-align: justify;
+    width: 100%; /* Asegurar que abarca todo el ancho de la pantalla */
 }
 
 /* Sección Our Clients */
@@ -372,6 +372,7 @@ footer {
     background: black; /* Fondo negro */
     padding: 10px 0;
     white-space: nowrap; /* Evita que el contenido salte de línea */
+    margin: 0; /* Eliminar el espacio entre el borde izquierdo y la marquesina */
 }
 
 .marquee-content {
@@ -620,18 +621,4 @@ html, body {
 /* Menú hamburguesa para móviles */
 .hamburger {
     display: none; /* No se muestra en escritorio */
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    background-color: #fff;
-    height: 2px;
-    margin: 4px 0;
-    width: 25px;
-}
-
-/* Menú en pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex; /* Mostrar el botón hamburgues
+    flex-direction: column
