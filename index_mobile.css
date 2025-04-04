@@ -335,6 +335,7 @@ footer {
 .why-choose-movonte {
     background-color: #000; /* Cambiar fondo a negro */
     padding: 50px 20px;
+    margin-top: 6cm; /* Bajar todo el contenido 3 centímetros más */
 }
 
 .why-choose-movonte p {
@@ -349,6 +350,7 @@ footer {
     background-color: #000;
     text-align: center;
     padding: 50px 20px;
+    margin-top: 6cm; /* Bajar todo el contenido 3 centímetros más */
 }
 
 .our-clients .clients-container {
@@ -368,6 +370,7 @@ footer {
 .experience-difference {
     background-color: #000;
     padding: 50px 20px;
+    margin-top: 6cm; /* Bajar todo el contenido 3 centímetros más */
 }
 
 .experience-difference p {
@@ -380,6 +383,7 @@ footer {
 .our-partners {
     background-color: #000;
     padding: 50px 20px;
+    margin-top: 6cm; /* Bajar todo el contenido 3 centímetros más */
 }
 
 .marquee {
@@ -611,14 +615,4 @@ html, body {
     background-color: #fff;
     height: 2px;
     width: 25px;
-    margin: 4px 0;
-}
-
-/* Ajuste para el primer ícono (LinkedIn) */
-.contact a:nth-of-type(1) img {
-    width: 28px; /* Se redujo un poco el primer ícono */
-    height: 28px;
-    transform: scale(0.739); /* Reduce el tamaño al 73.9% */
-}
-
-/* Hover para SVG
+    margin: 4px 0
