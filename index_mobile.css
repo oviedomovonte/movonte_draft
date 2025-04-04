@@ -618,3 +618,13 @@ html, body {
     margin: 4px 0
       
       
+#s3 .text-container p {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #000;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 4cm; /* Esto moverá el texto 4 cm hacia abajo */
+}
