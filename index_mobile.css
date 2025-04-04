@@ -282,7 +282,7 @@ footer {
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 3.2cm; /* Bajar la imagen de la portada 3.2 centímetros */
+    margin-top: 3.5cm; /* Bajar la imagen de la portada 3.5 centímetros */
 }
 
 .contenido-portada {
@@ -322,6 +322,7 @@ footer {
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
+    align-self: center; /* Centrar el botón en la pantalla */
 }
 
 /* Sección Why Choose Movonte */
@@ -622,4 +623,4 @@ html, body {
 
 /* Hover para SVG */
 .contact-icons a:hover img {
-    filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate
+    filter: brightness(0) saturate(100%) invert
