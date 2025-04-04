@@ -639,7 +639,30 @@ html, body {
 }
 
 .mastery-section .center-justify {
-    margin-left: 1cm;
-    margin-right: 1cm;
+    margin-left: 3cm;
+    margin-right: 3cm;
     text-align: justify;
+   padding: 0 20px;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: black; /* Fondo negro */
+    padding: 0; /* Eliminar padding lateral */
+    white-space: nowrap; /* Evita que el contenido salte de línea */
+    margin: 0; /* Eliminar márgenes */
+}
+
+.marquee-content {
+    display: flex;
+    gap: 50px; /* Espacio entre logos */
+    animation: marquee 20s linear infinite;
+    width: calc(280% + 50px); /* Ajusta el ancho al doble del viewport */
+    margin: -40; /* Eliminar márgenes */
+    padding: -28; /* Eliminar padding */
+}
+
+.master-tech-section {
+    background-color: #000; /* Cambiar fondo a negro */
 }
