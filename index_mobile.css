@@ -287,12 +287,11 @@ footer {
 
 .contenido-portada {
     position: absolute;
-    top: 3cm; /* Subir todos los textos de la portada 3 centímetros */
-    left: 0;
-    width: 100%;
-    padding: 0 20px;
+    top: 9.5cm; /* Bajar todos los textos de la portada 3 centímetros */
+    left: 10%;
+    z-index: 1; /* Asegurar que los textos estén sobre la imagen */
     text-align: left;
-    max-width: 90%; /* Asegurar que ocupa todo el ancho de la pantalla */
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -302,6 +301,13 @@ footer {
     font-size: 3em;
     margin-bottom: 0; /* Reducir el espacio entre el título y subtítulo */
     line-height: 1.2;
+}
+
+.contenido-portada .homepage-title {
+    font-size: 1em; /* Reducir ligeramente el tamaño del texto */
+    line-height: 1.2; /* Reducir el espacio entre líneas */
+    width: 100%; /* Asegurar que abarca todo el ancho de la pantalla móvil */
+    margin-bottom: 1em; /* Espacio entre el subtítulo y el párrafo */
 }
 
 .contenido-portada p {
@@ -516,37 +522,43 @@ footer {
     }
 
     .contenido-portada {
-        position: static;
-        transform: none;
-        margin-top: 50px;
+        top: 70%;
+        left: 5%;
+        transform: translateY(-50%);
         padding: 0 20px;
         text-align: left;
     }
 
     .contenido-portada h1 {
-        font-size: 2em;
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        margin-top: 30px;
+    }
+
+    .contenido-portada .homepage-title {
+        font-size: 1em; /* Reducir ligeramente el tamaño del texto */
+        line-height: 1.2; /* Reducir el espacio entre líneas */
+        width: 100%; /* Asegurar que abarca todo el ancho de la pantalla móvil */
+        margin-bottom: 1em; /* Espacio entre el subtítulo y el párrafo */
     }
 
     .contenido-portada p {
         font-size: 1em;
+        margin-top: 20px;
     }
 
     .contenido-portada .button {
-        padding: 15px 30px;
-        font-size: 1.1em;
+        padding: 8px 16px;
+        font-size: 0.8em;
+        margin-top: -10px;
     }
 
-    .our-clients .clients-container {
-        flex-direction: column;
+    .content {
+        margin-top: 100px;
     }
 
-    .our-clients .client {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .marquee-content img {
-        width: 100px; /* Ajusta el tamaño según necesites */
+    .imagen-espacio img {
+        width: 75%;
     }
 }
 
@@ -609,18 +621,4 @@ html, body {
     transform: scale(0.739); /* Reduce el tamaño al 73.9% */
 }
 
-/* Hover para SVG */
-.contact-icons a:hover img {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(15%) saturate(4854%) hue-rotate(315deg) brightness(102%) contrast(101%); /* Color #FC5e51 */
-  transform: scale(1.1); /* Crece un 10% */
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover específico para el primer ícono (LinkedIn) */
-.contact a:nth-of-type(1):hover img {
-  transform: scale(0.769); /* Crece un 3% adicional */
-}
-
-/* Hover para SVG */
-.contact-icons a:hover img {
-    filter: brightness(0) saturate(100%) invert
+/* Hover para SVG
