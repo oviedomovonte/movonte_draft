@@ -721,8 +721,7 @@ html, body {
   margin-left: -0.5cm;  /* Mueve medio centímetro hacia la izquierda */
 }
 
-#start_now {
-  display: inline-block;     /* Se comporta como un botón en línea */
-  margin: 0;                 /* Elimina centrado automático */
-  text-align: left;          /* Alinea el texto a la izquierda dentro del botón */
+.contenido-portada #start_now {
+  margin-top: -.8cm;
+  margin-left: -3.8cm; /* Igual que el contenido */
 }
