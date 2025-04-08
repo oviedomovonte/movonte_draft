@@ -710,7 +710,7 @@ html, body {
 .our-code-section p {
   margin: 0 auto;
   max-width: 700px;          /* Controla el ancho para buena legibilidad */
-  text-align: left;          /* O 'center' si quieres que el texto también esté centrado */
+  text-align: center;          /* O 'center' si quieres que el texto también esté centrado */
   line-height: 1.6;
   font-size: inherit;        /* Respeta el tamaño que ya tienes por default */
   word-break: normal;        /* No fuerza cortes raros en palabras */
@@ -721,7 +721,29 @@ html, body {
   margin-left: -0.5cm;  /* Mueve medio centímetro hacia la izquierda */
 }
 
+.contenido-portada {
+  margin-left: -0.5cm;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Espacio entre textos y botón */
+  max-width: 800px;
+}
+
 .contenido-portada #start_now {
-  margin-top: -.8cm;
-  margin-left: -3.8cm; /* Igual que el contenido */
+  align-self: flex-start;
+  background-color: #fc5e51;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: -68px;
+}
+
+.contenido-portada #start_now:hover {
+  background-color: #4c8ed9;
+  transform: scale(1.05);
 }
