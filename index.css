@@ -707,4 +707,39 @@ h2, .rating {
 .master-tech-section h2:hover span {
     color: #69aaff; /* Azul corporativo al hacer hover */
 }
+/* Dropdown container */
+.menu-items .dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+/* Dropdown content (hidden by default) */
+.menu-items .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 300px; /* Ancho mayor para que las opciones tengan más espacio */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Links inside the dropdown */
+.menu-items .dropdown-content a {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block; /* Mantenemos display: block para que las opciones se alineen verticalmente */
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for dropdown links */
+.menu-items .dropdown-content a:hover {
+  background-color: #0474ef; /* Azul corporativo */
+}
+
+/* Show the dropdown on hover */
+.menu-items .dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -60,3 +60,20 @@ function adjustContentForSpanishMobile() {
 window.addEventListener('load', adjustContentForSpanishMobile);
 window.addEventListener('resize', adjustContentForSpanishMobile);
 document.getElementById('language-select').addEventListener('change', adjustContentForSpanishMobile);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggle = document.querySelector(".dropdown-toggle");
+  const dropdown = document.querySelector(".dropdown");
+
+  dropdownToggle.addEventListener("click", function (e) {
+    e.preventDefault(); // Evita el comportamiento por defecto del enlace
+    dropdown.classList.toggle("active"); // Activa o desactiva el menú desplegable
+  });
+
+  // Cierra el dropdown si se hace clic fuera de él
+  document.addEventListener("click", function (e) {
+    if (!dropdown.contains(e.target) && !dropdownToggle.contains(e.target)) {
+      dropdown.classList.remove("active");
+    }
+  });
+});
