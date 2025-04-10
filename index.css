@@ -723,12 +723,13 @@ h2, .rating {
   z-index: 1;
   border-radius: 5px;
   overflow: hidden;
+  font-size: 1.2rem;
 }
 
 /* Links inside the dropdown */
 .menu-items .dropdown-content a {
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px 10px;
   text-decoration: none;
   display: block; /* Mantenemos display: block para que las opciones se alineen verticalmente */
   transition: background-color 0.3s;
