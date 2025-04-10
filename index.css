@@ -718,7 +718,7 @@ h2, .rating {
   display: none;
   position: absolute;
   background-color: #000;
-  min-width: 300px; /* Ancho mayor para que las opciones tengan más espacio */
+  min-width: 400px; /* Ancho mayor para que las opciones tengan más espacio */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 5px;
