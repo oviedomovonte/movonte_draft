@@ -732,6 +732,7 @@ h2, .rating {
   text-decoration: none;
   display: block; /* Mantenemos display: block para que las opciones se alineen verticalmente */
   transition: background-color 0.3s;
+  margin: 0; 
 }
 
 /* Hover effect for dropdown links */
@@ -742,4 +743,8 @@ h2, .rating {
 /* Show the dropdown on hover */
 .menu-items .dropdown:hover .dropdown-content {
   display: block;
+}
+.menu-items {
+  margin: 0;
+  padding: 0;
 }
