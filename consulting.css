@@ -113,15 +113,18 @@ body {
 }
 
 .contenido-portada h1 {
-    font-size: 8em;
+    font-size: 4em;
     margin-bottom: 0; /* Reducir el espacio entre el título y subtítulo */
     line-height: 1.2;
 }
 
 .contenido-portada p {
     font-size: 1.5em;
-    margin-top: 0; /* Reducir el espacio entre el título y el subtítulo */
-    margin-bottom: 0; /* Espacio entre el subtítulo y el botón */
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 888px; /* Cambia este valor según lo que necesites */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contenido-portada .button {
